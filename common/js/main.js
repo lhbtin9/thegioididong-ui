@@ -14,11 +14,15 @@ $(document).ready(function () {
 $(document).ready(function () {
     const modalOpenBtn = $('#header__location-panel');
     const modalCloseBtn = $('#modal__header-close-btn');
+    const modalOverlay = $('#modal__overlay');
+    const modalBody = $('#modal__body');
     const modalElement = $('#modal');
+
     $(modalOpenBtn).click(function (e) { 
         e.preventDefault();
         $(modalElement).addClass('modal--active');
     });
+
     $(modalCloseBtn).click(function (e) { 
         e.preventDefault();
         $(modalElement).removeClass('modal--active');
@@ -39,3 +43,36 @@ modalLocationInput.onkeyup = function () {
             lis[i].style.display = 'none';
     }
 }
+
+// ##### Show/hide navbar on Tablet & Mobile #####
+$(document).ready(function () {
+    const navbarElement = $('#header__navbar');
+    const openNavbarBtn = $('#header__bars-btn');
+    const closeNavbarBtn = $('#header__navbar-close-btn');
+
+    $(openNavbarBtn).click(function (e) { 
+        e.preventDefault();
+        const checkHiden = $(navbarElement).hasClass('hide-on-lg');
+        if(checkHiden) $(navbarElement).removeClass('hide-on-lg');
+        $(navbarElement).addClass('header__navbar--active');
+    });
+
+    $(closeNavbarBtn).click(function (e) { 
+        e.preventDefault();
+        $(navbarElement).removeClass('header__navbar--active');
+    });
+});
+
+
+// ##### Show/hide Header__Search on moblie
+$(document).ready(function () {
+    const searchElement = $('#header__search');
+    const searchBtn = $('#header__search-btn');
+
+    $(searchBtn).click(function (e) { 
+        e.preventDefault();
+        const checkHiden = $(searchElement).hasClass('hide-on-sm');
+        if(checkHiden) $(searchElement).removeClass('hide-on-sm');
+        $(searchElement).toggleClass('header__search--active');
+    });
+});

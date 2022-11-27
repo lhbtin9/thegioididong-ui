@@ -73,7 +73,12 @@
                                 <span>Hồ Chí Minh</span>
                             </div>
                         </div>
-                        <div class="header__search">
+
+                        <div class="header__search-btn hide show-on-sm" id="header__search-btn">
+                            <i class="icon-search"></i>
+                        </div>
+
+                        <div class="header__search hide-on-sm" id="header__search">
                             <form action="#" method="post" class="header__search-form">
                                 <input type="text" class="header__search-input" placeholder="Bạn cần tìm gì..."
                                     required>
@@ -90,7 +95,7 @@
                                 </button>
                             </form>
                         </div>
-                        <div class="header__order-history">
+                        <div class="header__order-history  hide-on-lg">
                             <a href="#" class="header__order-history-linked">Lịch sử đơn hàng</a>
                         </div>
                         <div class="header__cart">
@@ -99,7 +104,7 @@
                                 <span>Giỏ hàng</span>
                             </a>
                         </div>
-                        <div class="header__services-links">
+                        <div class="header__services-links hide-on-lg">
                             <a href="#" class="header__services-item">
                                 24h Công nghệ
                             </a>
@@ -110,55 +115,92 @@
                                 Game App
                             </a>
                         </div>
+                        <div class="header__bars-btn hide show-on-lg" id="header__bars-btn">
+                            <i class="iconGlobal-menu"></i>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="header__navbar">
+            <div class="header__navbar hide-on-lg" id="header__navbar">
                 <div class="container">
+                    <div class="header__navbar-close hide show-on-lg">
+                        <span class="header__navbar-close-btn" id="header__navbar-close-btn">
+                            <i class="close-symbol"></i>
+                            Đóng
+                        </span>
+                    </div>
                     <div class="header__navbar-flex">
                         <a href="#" class="header__navbar-item">
-                            <img src="./common/imgs/icon-phone-96x96-2.png" alt="Điện thoại"
+                            <img src="./common/imgs/icon-phone-96x96-2.png" class="hide-on-lg" alt="Điện thoại"
                                 class="header__navbar-icon">
                             <span>Điện thoại</span>
                         </a>
 
                         <a href="#" class="header__navbar-item">
-                            <img src="./common/imgs/icon-laptop-96x96-1.png" alt="Laptop" class="header__navbar-icon">
+                            <img src="./common/imgs/icon-laptop-96x96-1.png" class="hide-on-lg" alt="Laptop" class="header__navbar-icon">
                             <span>Laptop</span>
                         </a>
 
                         <a href="#" class="header__navbar-item">
-                            <img src="./common/imgs/icon-tablet-96x96-1.png" alt="Tablet" class="header__navbar-icon">
+                            <img src="./common/imgs/icon-tablet-96x96-1.png" class="hide-on-lg" alt="Tablet" class="header__navbar-icon">
                             <span>Tablet</span>
                         </a>
 
                         <a href="#" class="header__navbar-item">
-                            <img src="./common/imgs/icon-phu-kien-96x96-1.png" alt="Phụ kiện"
+                            <img src="./common/imgs/icon-phu-kien-96x96-1.png" class="hide-on-lg" alt="Phụ kiện"
                                 class="header__navbar-icon">
                             <span class="show-more-icon">Phụ kiện</span>
 
                         </a>
 
                         <a href="#" class="header__navbar-item">
-                            <img src="./common/imgs/icon-smartwatch-96x96-1.png" alt="Smartwatch"
+                            <img src="./common/imgs/icon-smartwatch-96x96-1.png" class="hide-on-lg" alt="Smartwatch"
                                 class="header__navbar-icon">
                             <span>Smartwatch</span>
                         </a>
 
-                        <a href="#" class="header__navbar-item">
-                            <img src="./common/imgs/watch-icon-96x96.png" alt="Đồng hồ" class="header__navbar-icon">
+                        <a href="#" class="header__navbar-item hide-on-lg">
+                            <img src="./common/imgs/watch-icon-96x96.png" class="hide-on-lg" alt="Đồng hồ" class="header__navbar-icon">
                             <span>Đồng hồ</span>
                         </a>
 
+                        <a href="#" class="header__navbar-item hide show-on-lg">
+                            <span>Máy tính bộ</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item hide show-on-lg">
+                            <span>Màn hình máy tính</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item hide show-on-lg">
+                            <span>Máy in</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item hide show-on-lg">
+                            <span>Mực in</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item hide show-on-lg">
+                            <span>Đồng hồ thời trang</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item hide show-on-lg">
+                            <span>Sạc dự phòng</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item hide show-on-lg">
+                            <span>Tai nghe</span>
+                        </a>
+
                         <a href="#" class="header__navbar-item">
-                            <img src="./common/imgs/icon-header-may-cu-30x30.png" alt="Máy cũ giá rẻ"
+                            <img src="./common/imgs/icon-header-may-cu-30x30.png" class="hide-on-lg" alt="Máy cũ giá rẻ"
                                 class="header__navbar-icon">
                             <span>Máy cũ giá rẻ</span>
                         </a>
 
-                        <a href="#" class="header__navbar-item">
-                            <img src="./common/imgs/icon-pc-96x96.png" alt="PC, Máy in" class="header__navbar-icon">
+                        <a href="#" class="header__navbar-item hide-on-lg">
+                            <img src="./common/imgs/icon-pc-96x96.png" class="hide-on-lg" alt="PC, Máy in" class="header__navbar-icon">
                             <span class="show-more-icon">PC, Máy in</span>
                         </a>
 
@@ -169,6 +211,34 @@
                         <a href="#" class="header__navbar-item">
                             <span class="show-more-icon">Dịch vụ tiện ích</span>
                         </a>
+                    </div>
+                    <div class="header__recommed hide show-on-lg">
+                        <div class="row gutter">
+                            <div class="col-6 col-md-6 col-sm-12">
+                                <div class="h3 header__recommed-title">Nhóm hàng mới</div>
+                                <a href="#" class="header__recommed-item">
+                                    Phụ kiện ô tô
+                                </a>
+                                <a href="#" class="header__recommed-item">
+                                    Thiết bị nhà thông minh
+                                </a>
+                                <a href="#" class="header__recommed-item">
+                                    Màn hình máy tính
+                                </a>
+                                <a href="#" class="header__recommed-item">
+                                    Thẻ cào giảm đến 3%
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-6 col-sm-12">
+                                <div class="h3 header__recommed-title">Thế giới công nghệ</div>
+                                <a href="#" class="header__recommed-item">
+                                    24h Công nghệ
+                                </a>
+                                <a href="#" class="header__recommed-item">
+                                    Hỏi đáp
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -323,8 +393,8 @@
     </div>
 
     <div id="modal">
-        <div class="modal__overlay">
-            <div class="modal__body">
+        <div class="modal__overlay" id="modal__overlay">
+            <div class="modal__body" id="modal__body">
                 <div class="modal__header">
                     <h3 class="modal__header-text">
                         Địa chỉ đã chọn: Phường An Phú, Thành phố Thủ Đức (Gồm Q2, Q9, Q.TĐ), Hồ Chí Minh
