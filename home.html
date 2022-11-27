@@ -68,7 +68,7 @@
                         </div>
 
                         <div class="header__locaion">
-                            <div class="header__location-panel show-more-icon">
+                            <div class="header__location-panel show-more-icon" id="header__location-panel">
                                 Xem giá, tồn kho tại:
                                 <span>Hồ Chí Minh</span>
                             </div>
@@ -269,7 +269,7 @@
                                     <i class="icon-protected"></i>
                                 </a>
                                 <a href="#">
-                                    <i><img src="common/imgs/handle_cert.png" alt=""></i>
+                                    <i class="icon-handle-cert"></i>
                                 </a>
                             </div>
                             <div class="footer__linked">
@@ -308,18 +308,106 @@
             </div>
             <div class="footer__coppyright">
                 <div class="container">
-                   <span class="footer__coppyright-content">
-                    © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày
-                    02/01/2007. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.
-                    Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email:
-                    cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. <a href="#">Xem chính sách sử dụng</a>
-                   </span>
+                    <span class="footer__coppyright-content">
+                        © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày
+                        02/01/2007. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.
+                        Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email:
+                        cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. <a href="#">Xem chính sách sử
+                            dụng</a>
+                    </span>
                 </div>
             </div>
         </div>
         <!-- ##### Begin Footer ##### -->
 
     </div>
+
+    <div id="modal">
+        <div class="modal__overlay">
+            <div class="modal__body">
+                <div class="modal__header">
+                    <h3 class="modal__header-text">
+                        Địa chỉ đã chọn: Phường An Phú, Thành phố Thủ Đức (Gồm Q2, Q9, Q.TĐ), Hồ Chí Minh
+                    </h3>
+                    <span class="modal__header-close-btn" id="modal__header-close-btn">
+                        <i class="close-symbol"></i>
+                        Đóng
+                    </span>
+                    <div class="modal__search">
+                        <i class="icon-search modal__search-icon"></i>
+                        <input type="text" class="modal__search-input" id="modal-filter-locaion">
+                    </div>
+                </div>
+                <div class="modal__session">
+                    <h4 class="modal__session-title">Chọn tỉnh hoặc thành phố</h4>
+                    <div class="modal__location-list">
+                        <div class="modal__location-item modal__location-item--active">Hồ Chí Minh</div>
+                        <div class="modal__location-item">Hà Nội</div>
+                        <div class="modal__location-item">Đà Nẵng</div>
+                        <div class="modal__location-item">An Giang</div>
+                        <div class="modal__location-item">Bà Rịa - Vũng Tàu</div>
+                        <div class="modal__location-item">Bắc Giang</div>
+                        <div class="modal__location-item">Bắc Kạn</div>
+                        <div class="modal__location-item">Bạc Liêu</div>
+                        <div class="modal__location-item">Bắc Ninh</div>
+                        <div class="modal__location-item">Bến Tre</div>
+                        <div class="modal__location-item">Bình Định</div>
+                        <div class="modal__location-item">Bình Dương</div>
+                        <div class="modal__location-item">Bình Phước</div>
+                        <div class="modal__location-item">Cần Thơ</div>
+                        <div class="modal__location-item">Cao Bằng</div>
+                        <div class="modal__location-item">Đắk Lắk</div>
+                        <div class="modal__location-item">Đắk Nông</div>
+                        <div class="modal__location-item">Điện Biên</div>
+                        <div class="modal__location-item">Đồng Nai</div>
+                        <div class="modal__location-item">Đồng Tháp</div>
+                        <div class="modal__location-item">Gia Lai</div>
+                        <div class="modal__location-item">Hà Giang</div>
+                        <div class="modal__location-item">Hà Nam</div>
+                        <div class="modal__location-item">Hà Tĩnh</div>
+                        <div class="modal__location-item">Hải Dương</div>
+                        <div class="modal__location-item">Hải Phòng</div>
+                        <div class="modal__location-item">Hậu Giang</div>
+                        <div class="modal__location-item">Hòa Bình</div>
+                        <div class="modal__location-item">Hưng Yên</div>
+                        <div class="modal__location-item">Khánh Hòa</div>
+                        <div class="modal__location-item">Kiên Giang</div>
+                        <div class="modal__location-item">Kon Tum</div>
+                        <div class="modal__location-item">Lai Châu</div>
+                        <div class="modal__location-item">Lâm Đồng</div>
+                        <div class="modal__location-item">Lạng Sơn</div>
+                        <div class="modal__location-item">Lào Cai</div>
+                        <div class="modal__location-item">Long An</div>
+                        <div class="modal__location-item">Nam Định</div>
+                        <div class="modal__location-item">Nghệ An</div>
+                        <div class="modal__location-item">Ninh Bình</div>
+                        <div class="modal__location-item">Ninh Thuận</div>
+                        <div class="modal__location-item">Phú Thọ</div>
+                        <div class="modal__location-item">Phú Yên</div>
+                        <div class="modal__location-item">Quảng Bình</div>
+                        <div class="modal__location-item">Quảng Nam</div>
+                        <div class="modal__location-item">Quảng Ngãi</div>
+                        <div class="modal__location-item">Quảng Ninh</div>
+                        <div class="modal__location-item">Quảng Trị</div>
+                        <div class="modal__location-item">Sóc Trăng</div>
+                        <div class="modal__location-item">Sơn La</div>
+                        <div class="modal__location-item">Tây Ninh</div>
+                        <div class="modal__location-item">Thái Bình</div>
+                        <div class="modal__location-item">Thái Nguyên</div>
+                        <div class="modal__location-item">Thanh Hóa</div>
+                        <div class="modal__location-item">Thừa Thiên Huế</div>
+                        <div class="modal__location-item">Tiền Giang</div>
+                        <div class="modal__location-item">Trà Vinh</div>
+                        <div class="modal__location-item">Tuyên Quang</div>
+                        <div class="modal__location-item">Vĩnh Long</div>
+                        <div class="modal__location-item">Vĩnh Phúc</div>
+                        <div class="modal__location-item">Yên Bái</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 <script src="common/js/jquery.min.js"></script>
 <script src="common/js/owl.carousel.js"></script>
