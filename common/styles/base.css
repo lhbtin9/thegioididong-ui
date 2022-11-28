@@ -2,7 +2,8 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
@@ -30,8 +31,11 @@ button, input {
 
 
 .row {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
-    flex-wrap: wrap !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
 }
 
 .gutter {
@@ -76,7 +80,8 @@ button, input {
 .row>.col-11,
 .row>.col-12 {
     display: block;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .row>.col-hidden {
@@ -84,67 +89,93 @@ button, input {
 }
 
 .row>.col-1 {
-    flex: 0 0 var(--col-1-width) !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 var(--col-1-width) !important;
+            flex: 0 0 var(--col-1-width) !important;
     max-width: var(--col-1-width) !important;
 }
 
 .row>.col-2 {
-    flex: 0 0 var(--col-2-width) !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 var(--col-2-width) !important;
+            flex: 0 0 var(--col-2-width) !important;
     max-width: var(--col-2-width) !important;
 }
 
 .row>.col-2-4 {
-    flex: 0 0 var(--col-2-4-width) !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 var(--col-2-4-width) !important;
+            flex: 0 0 var(--col-2-4-width) !important;
     max-width: var(--col-2-4-width) !important;
 }
 
 .row>.col-3 {
-    flex: 0 0 var(--col-3-width) !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 var(--col-3-width) !important;
+            flex: 0 0 var(--col-3-width) !important;
     max-width: var(--col-3-width) !important;
 }
 
 .row>.col-4 {
-    flex: 0 0 var(--col-4-width) !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 var(--col-4-width) !important;
+            flex: 0 0 var(--col-4-width) !important;
     max-width: var(--col-4-width) !important;
 }
 
 .row>.col-5 {
-    flex: 0 0 var(--col-5-width) !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 var(--col-5-width) !important;
+            flex: 0 0 var(--col-5-width) !important;
     max-width: var(--col-5-width) !important;
 }
 
 .row>.col-6 {
-    flex: 0 0 var(--col-6-width) !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 var(--col-6-width) !important;
+            flex: 0 0 var(--col-6-width) !important;
     max-width: var(--col-6-width) !important;
 }
 
 .row>.col-7 {
-    flex: 0 0 var(--col-7-width) !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 var(--col-7-width) !important;
+            flex: 0 0 var(--col-7-width) !important;
     max-width: var(--col-7-width) !important;
 }
 
 .row>.col-8 {
-    flex: 0 0 var(--col-8-width) !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 var(--col-8-width) !important;
+            flex: 0 0 var(--col-8-width) !important;
     max-width: var(--col-8-width) !important;
 }
 
 .row>.col-9 {
-    flex: 0 0 var(--col-9-width) !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 var(--col-9-width) !important;
+            flex: 0 0 var(--col-9-width) !important;
     max-width: var(--col-9-width) !important;
 }
 
 .row>.col-10 {
-    flex: 0 0 var(--col-10-width) !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 var(--col-10-width) !important;
+            flex: 0 0 var(--col-10-width) !important;
     max-width: var(--col-10-width) !important;
 }
 
 .row>.col-11 {
-    flex: 0 0 var(--col-11-width) !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 var(--col-11-width) !important;
+            flex: 0 0 var(--col-11-width) !important;
     max-width: var(--col-11-width) !important;
 }
 
 .row>.col-12 {
-    flex: 0 0 var(--col-12-width) !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 var(--col-12-width) !important;
+            flex: 0 0 var(--col-12-width) !important;
     max-width: var(--col-12-width) !important;
 }
 
@@ -276,7 +307,8 @@ button, input {
     .row>.col-xl-11,
     .row>.col-xl-12 {
         display: block;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
 
     .row>.col-xl-hidden {
@@ -284,67 +316,93 @@ button, input {
     }
 
     .row>.col-xl-1 {
-        flex: 0 0 var(--col-1-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-1-width) !important;
+                flex: 0 0 var(--col-1-width) !important;
         max-width: var(--col-1-width) !important;
     }
 
     .row>.col-xl-2 {
-        flex: 0 0 var(--col-2-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-2-width) !important;
+                flex: 0 0 var(--col-2-width) !important;
         max-width: var(--col-2-width) !important;
     }
 
     .row>.col-xl-2-4 {
-        flex: 0 0 var(--col-2-4-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-2-4-width) !important;
+                flex: 0 0 var(--col-2-4-width) !important;
         max-width: var(--col-2-4-width) !important;
     }
 
     .row>.col-xl-3 {
-        flex: 0 0 var(--col-3-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-3-width) !important;
+                flex: 0 0 var(--col-3-width) !important;
         max-width: var(--col-3-width) !important;
     }
 
     .row>.col-xl-4 {
-        flex: 0 0 var(--col-4-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-4-width) !important;
+                flex: 0 0 var(--col-4-width) !important;
         max-width: var(--col-4-width) !important;
     }
 
     .row>.col-xl-5 {
-        flex: 0 0 var(--col-5-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-5-width) !important;
+                flex: 0 0 var(--col-5-width) !important;
         max-width: var(--col-5-width) !important;
     }
 
     .row>.col-xl-6 {
-        flex: 0 0 var(--col-6-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-6-width) !important;
+                flex: 0 0 var(--col-6-width) !important;
         max-width: var(--col-6-width) !important;
     }
 
     .row>.col-xl-7 {
-        flex: 0 0 var(--col-7-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-7-width) !important;
+                flex: 0 0 var(--col-7-width) !important;
         max-width: var(--col-7-width) !important;
     }
 
     .row>.col-xl-8 {
-        flex: 0 0 var(--col-8-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-8-width) !important;
+                flex: 0 0 var(--col-8-width) !important;
         max-width: var(--col-8-width) !important;
     }
 
     .row>.col-xl-9 {
-        flex: 0 0 var(--col-9-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-9-width) !important;
+                flex: 0 0 var(--col-9-width) !important;
         max-width: var(--col-9-width) !important;
     }
 
     .row>.col-xl-10 {
-        flex: 0 0 var(--col-10-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-10-width) !important;
+                flex: 0 0 var(--col-10-width) !important;
         max-width: var(--col-10-width) !important;
     }
 
     .row>.col-xl-11 {
-        flex: 0 0 var(--col-11-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-11-width) !important;
+                flex: 0 0 var(--col-11-width) !important;
         max-width: var(--col-11-width) !important;
     }
 
     .row>.col-xl-12 {
-        flex: 0 0 var(--col-12-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-12-width) !important;
+                flex: 0 0 var(--col-12-width) !important;
         max-width: var(--col-12-width) !important;
     }
 
@@ -480,7 +538,8 @@ button, input {
     .row>.col-lg-11,
     .row>.col-lg-12 {
         display: block;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
 
     .row>.col-lg-hidden {
@@ -488,67 +547,93 @@ button, input {
     }
 
     .row>.col-lg-1 {
-        flex: 0 0 var(--col-1-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-1-width) !important;
+                flex: 0 0 var(--col-1-width) !important;
         max-width: var(--col-1-width) !important;
     }
 
     .row>.col-lg-2 {
-        flex: 0 0 var(--col-2-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-2-width) !important;
+                flex: 0 0 var(--col-2-width) !important;
         max-width: var(--col-2-width) !important;
     }
 
     .row>.col-lg-2-4 {
-        flex: 0 0 var(--col-2-4-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-2-4-width) !important;
+                flex: 0 0 var(--col-2-4-width) !important;
         max-width: var(--col-2-4-width) !important;
     }
 
     .row>.col-lg-3 {
-        flex: 0 0 var(--col-3-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-3-width) !important;
+                flex: 0 0 var(--col-3-width) !important;
         max-width: var(--col-3-width) !important;
     }
 
     .row>.col-lg-4 {
-        flex: 0 0 var(--col-4-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-4-width) !important;
+                flex: 0 0 var(--col-4-width) !important;
         max-width: var(--col-4-width) !important;
     }
 
     .row>.col-lg-5 {
-        flex: 0 0 var(--col-5-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-5-width) !important;
+                flex: 0 0 var(--col-5-width) !important;
         max-width: var(--col-5-width) !important;
     }
 
     .row>.col-lg-6 {
-        flex: 0 0 var(--col-6-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-6-width) !important;
+                flex: 0 0 var(--col-6-width) !important;
         max-width: var(--col-6-width) !important;
     }
 
     .row>.col-lg-7 {
-        flex: 0 0 var(--col-7-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-7-width) !important;
+                flex: 0 0 var(--col-7-width) !important;
         max-width: var(--col-7-width) !important;
     }
 
     .row>.col-lg-8 {
-        flex: 0 0 var(--col-8-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-8-width) !important;
+                flex: 0 0 var(--col-8-width) !important;
         max-width: var(--col-8-width) !important;
     }
 
     .row>.col-lg-9 {
-        flex: 0 0 var(--col-9-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-9-width) !important;
+                flex: 0 0 var(--col-9-width) !important;
         max-width: var(--col-9-width) !important;
     }
 
     .row>.col-lg-10 {
-        flex: 0 0 var(--col-10-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-10-width) !important;
+                flex: 0 0 var(--col-10-width) !important;
         max-width: var(--col-10-width) !important;
     }
 
     .row>.col-lg-11 {
-        flex: 0 0 var(--col-11-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-11-width) !important;
+                flex: 0 0 var(--col-11-width) !important;
         max-width: var(--col-11-width) !important;
     }
 
     .row>.col-lg-12 {
-        flex: 0 0 var(--col-12-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-12-width) !important;
+                flex: 0 0 var(--col-12-width) !important;
         max-width: var(--col-12-width) !important;
     }
 
@@ -682,7 +767,8 @@ button, input {
     .row>.col-md-11,
     .row>.col-md-12 {
         display: block;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
 
     .row>.col-md-hidden {
@@ -690,67 +776,93 @@ button, input {
     }
 
     .row>.col-md-1 {
-        flex: 0 0 var(--col-1-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-1-width) !important;
+                flex: 0 0 var(--col-1-width) !important;
         max-width: var(--col-1-width) !important;
     }
 
     .row>.col-md-2 {
-        flex: 0 0 var(--col-2-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-2-width) !important;
+                flex: 0 0 var(--col-2-width) !important;
         max-width: var(--col-2-width) !important;
     }
 
     .row>.col-md-2-4 {
-        flex: 0 0 var(--col-2-4-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-2-4-width) !important;
+                flex: 0 0 var(--col-2-4-width) !important;
         max-width: var(--col-2-4-width) !important;
     }
 
     .row>.col-md-3 {
-        flex: 0 0 var(--col-3-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-3-width) !important;
+                flex: 0 0 var(--col-3-width) !important;
         max-width: var(--col-3-width) !important;
     }
 
     .row>.col-md-4 {
-        flex: 0 0 var(--col-4-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-4-width) !important;
+                flex: 0 0 var(--col-4-width) !important;
         max-width: var(--col-4-width) !important;
     }
 
     .row>.col-md-5 {
-        flex: 0 0 var(--col-5-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-5-width) !important;
+                flex: 0 0 var(--col-5-width) !important;
         max-width: var(--col-5-width) !important;
     }
 
     .row>.col-md-6 {
-        flex: 0 0 var(--col-6-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-6-width) !important;
+                flex: 0 0 var(--col-6-width) !important;
         max-width: var(--col-6-width) !important;
     }
 
     .row>.col-md-7 {
-        flex: 0 0 var(--col-7-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-7-width) !important;
+                flex: 0 0 var(--col-7-width) !important;
         max-width: var(--col-7-width) !important;
     }
 
     .row>.col-md-8 {
-        flex: 0 0 var(--col-8-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-8-width) !important;
+                flex: 0 0 var(--col-8-width) !important;
         max-width: var(--col-8-width) !important;
     }
 
     .row>.col-md-9 {
-        flex: 0 0 var(--col-9-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-9-width) !important;
+                flex: 0 0 var(--col-9-width) !important;
         max-width: var(--col-9-width) !important;
     }
 
     .row>.col-md-10 {
-        flex: 0 0 var(--col-10-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-10-width) !important;
+                flex: 0 0 var(--col-10-width) !important;
         max-width: var(--col-10-width) !important;
     }
 
     .row>.col-md-11 {
-        flex: 0 0 var(--col-11-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-11-width) !important;
+                flex: 0 0 var(--col-11-width) !important;
         max-width: var(--col-11-width) !important;
     }
 
     .row>.col-md-12 {
-        flex: 0 0 var(--col-12-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-12-width) !important;
+                flex: 0 0 var(--col-12-width) !important;
         max-width: var(--col-12-width) !important;
     }
 
@@ -888,7 +1000,8 @@ button, input {
     .row>.col-sm-11,
     .row>.col-sm-12 {
         display: block;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
     }
 
     .row>.col-sm-hidden {
@@ -896,67 +1009,93 @@ button, input {
     }
 
     .row>.col-sm-1 {
-        flex: 0 0 var(--col-1-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-1-width) !important;
+                flex: 0 0 var(--col-1-width) !important;
         max-width: var(--col-1-width) !important;
     }
 
     .row>.col-sm-2 {
-        flex: 0 0 var(--col-2-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-2-width) !important;
+                flex: 0 0 var(--col-2-width) !important;
         max-width: var(--col-2-width) !important;
     }
 
     .row>.col-sm-2-4 {
-        flex: 0 0 var(--col-2-4-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-2-4-width) !important;
+                flex: 0 0 var(--col-2-4-width) !important;
         max-width: var(--col-2-4-width) !important;
     }
 
     .row>.col-sm-3 {
-        flex: 0 0 var(--col-3-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-3-width) !important;
+                flex: 0 0 var(--col-3-width) !important;
         max-width: var(--col-3-width) !important;
     }
 
     .row>.col-sm-4 {
-        flex: 0 0 var(--col-4-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-4-width) !important;
+                flex: 0 0 var(--col-4-width) !important;
         max-width: var(--col-4-width) !important;
     }
 
     .row>.col-sm-5 {
-        flex: 0 0 var(--col-5-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-5-width) !important;
+                flex: 0 0 var(--col-5-width) !important;
         max-width: var(--col-5-width) !important;
     }
 
     .row>.col-sm-6 {
-        flex: 0 0 var(--col-6-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-6-width) !important;
+                flex: 0 0 var(--col-6-width) !important;
         max-width: var(--col-6-width) !important;
     }
 
     .row>.col-sm-7 {
-        flex: 0 0 var(--col-7-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-7-width) !important;
+                flex: 0 0 var(--col-7-width) !important;
         max-width: var(--col-7-width) !important;
     }
 
     .row>.col-sm-8 {
-        flex: 0 0 var(--col-8-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-8-width) !important;
+                flex: 0 0 var(--col-8-width) !important;
         max-width: var(--col-8-width) !important;
     }
 
     .row>.col-sm-9 {
-        flex: 0 0 var(--col-9-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-9-width) !important;
+                flex: 0 0 var(--col-9-width) !important;
         max-width: var(--col-9-width) !important;
     }
 
     .row>.col-sm-10 {
-        flex: 0 0 var(--col-10-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-10-width) !important;
+                flex: 0 0 var(--col-10-width) !important;
         max-width: var(--col-10-width) !important;
     }
 
     .row>.col-sm-11 {
-        flex: 0 0 var(--col-11-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-11-width) !important;
+                flex: 0 0 var(--col-11-width) !important;
         max-width: var(--col-11-width) !important;
     }
 
     .row>.col-sm-12 {
-        flex: 0 0 var(--col-12-width) !important;
+        -webkit-box-flex: 0 !important;
+            -ms-flex: 0 0 var(--col-12-width) !important;
+                flex: 0 0 var(--col-12-width) !important;
         max-width: var(--col-12-width) !important;
     }
 
@@ -1051,6 +1190,15 @@ button, input {
 
 
 /* ##### Animation ##### */
+@-webkit-keyframes fadeInOpacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 @keyframes fadeInOpacity {
     from {
         opacity: 0;
@@ -1061,13 +1209,27 @@ button, input {
     }
 }
 
-@keyframes grow {
+@-webkit-keyframes grow {
     from {
-        transform: scale(0);
+        -webkit-transform: scale(0);
+                transform: scale(0);
     }
 
     to {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@keyframes grow {
+    from {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 }
 
