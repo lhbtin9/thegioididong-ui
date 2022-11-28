@@ -21,11 +21,13 @@ $(document).ready(function () {
     $(modalOpenBtn).click(function (e) { 
         e.preventDefault();
         $(modalElement).addClass('modal--active');
+        $("body").addClass("no-scroll");
     });
 
     $(modalCloseBtn).click(function (e) { 
         e.preventDefault();
         $(modalElement).removeClass('modal--active');
+        $('body').removeClass('no-scroll');
     });
 });
 
@@ -55,11 +57,13 @@ $(document).ready(function () {
         const checkHiden = $(navbarElement).hasClass('hide-on-lg');
         if(checkHiden) $(navbarElement).removeClass('hide-on-lg');
         $(navbarElement).addClass('header__navbar--active');
+        $("body").addClass("no-scroll");
     });
 
     $(closeNavbarBtn).click(function (e) { 
         e.preventDefault();
         $(navbarElement).removeClass('header__navbar--active');
+        $('body').removeClass('no-scroll');
     });
 });
 
