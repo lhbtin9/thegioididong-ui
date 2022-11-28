@@ -787,7 +787,7 @@ body.no-scroll {
 
 .modal__location-list {
     overflow-y: scroll;
-    max-height: calc(100% - 30px);
+    max-height: calc(100% - 27px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
