@@ -776,7 +776,7 @@ body {
 
 .modal__location-list {
     overflow-y: scroll;
-    max-height: 50vh;
+    max-height: 41vh;
     overflow-y: scroll;
     display: -webkit-box;
     display: -ms-flexbox;
