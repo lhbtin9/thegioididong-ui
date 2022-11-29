@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="./common/icons/favicon_TGDD.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="./common/icons/favicon_TGDD.ico" rel="apple-touch-icon" />
+    <link href="./common/icons/favicon_TGDD.ico" rel="apple-touch-icon-precomposed" />
+    <title>Thegioididong.com - Điện thoại, Laptop, Phụ kiện, Đồng hồ chính hãng</title>
+    <link rel="stylesheet" href="./common/styles/base.css">
+    <link rel="stylesheet" href="./common/styles/main.css">
+    <link rel="stylesheet" href="./common/styles/home.css">
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- ##### Start Header ##### -->
+        <div class="header">
+            <div class="header__slider hide-on-lg hide-on-md hide-on-sm">
+                <div class="owl-carousel owl-theme header__silder-owl">
+
+                    <!-- header__slider-item -->
+                    <div class="item">
+                        <div class="header__slider-wrapper" style="background-color: #000;">
+                            <div class="header__slider-img container">
+                                <a href="#">
+                                    <img src="upload/imgs/header__silder-owl__1200x44-1.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- header__slider-item -->
+                    <div class="item">
+                        <div class="header__slider-wrapper" style="background-color: #010000;">
+                            <div class="header__slider-img container">
+                                <a href="#">
+                                    <img src="upload/imgs/header__silder-owl__1200x44-2.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- header__slider-item -->
+                    <div class="item">
+                        <div class="header__slider-wrapper" style="background-color: #FEEB60;">
+                            <div class="header__slider-img container">
+                                <a href="#">
+                                    <img src="upload/imgs/header__silder-owl__1200x44-3.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="header__second">
+                <div class="container">
+                    <div class="header__second-flex">
+                        <div class="header__logo">
+                            <a href="#"><i class="iconGlobal-logo"></i></a>
+                        </div>
+
+                        <div class="header__locaion" id="header__location-panel">
+                            <div class="header__location-panel show-more-icon">
+                                <div>Xem giá, tồn kho tại:</div>
+                                <span>Hồ Chí Minh</span>
+                            </div>
+                        </div>
+
+                        <div class="header__search-btn hide show-on-sm" id="header__search-btn">
+                            <i class="icon-search"></i>
+                        </div>
+
+                        <div class="header__search hide-on-sm" id="header__search">
+                            <form action="#" method="post" class="header__search-form">
+                                <input type="text" class="header__search-input" placeholder="Bạn cần tìm gì..."
+                                    required>
+                                <div class="header__suggestions">
+                                    <span class="header__suggestions-title">Có phải bạn muốn tìm</span>
+                                    <a href="#" class="header__suggestions-result">Điện thoại iPhone (Apple)</a>
+                                    <a href="#" class="header__suggestions-result">Điện thoại Samsung</a>
+                                    <a href="#" class="header__suggestions-result">Điện thoại Oppo</a>
+                                    <span class="header__suggestions-title">Sản phẩm gợi ý</span>
+
+                                </div>
+                                <button type="submit" class="header__search-btn">
+                                    <i class="icon-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="header__order-history  hide-on-lg">
+                            <a href="#" class="header__order-history-linked">Lịch sử đơn hàng</a>
+                        </div>
+                        <div class="header__cart">
+                            <a href="#" class="header__cart-linked">
+                                <i class="iconGlobal-cart"></i>
+                                <span>Giỏ hàng</span>
+                            </a>
+                        </div>
+                        <div class="header__services-links hide-on-lg">
+                            <a href="#" class="header__services-item">
+                                24h Công nghệ
+                            </a>
+                            <a href="#" class="header__services-item">
+                                Hỏi Đáp
+                            </a>
+                            <a href="#" class="header__services-item">
+                                Game App
+                            </a>
+                        </div>
+                        <div class="header__bars-btn hide show-on-lg" id="header__bars-btn">
+                            <i class="iconGlobal-menu"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__navbar hide-on-lg" id="header__navbar">
+                <div class="container">
+                    <div class="header__navbar-close hide show-on-lg">
+                        <span class="header__navbar-close-btn" id="header__navbar-close-btn">
+                            <i class="close-symbol"></i>
+                            Đóng
+                        </span>
+                    </div>
+                    <div class="header__navbar-flex">
+                        <a href="#" class="header__navbar-item">
+                            <img src="./common/imgs/icon-phone-96x96-2.png" class="hide-on-lg" alt="Điện thoại"
+                                class="header__navbar-icon">
+                            <span>Điện thoại</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item">
+                            <img src="./common/imgs/icon-laptop-96x96-1.png" class="hide-on-lg" alt="Laptop"
+                                class="header__navbar-icon">
+                            <span>Laptop</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item">
+                            <img src="./common/imgs/icon-tablet-96x96-1.png" class="hide-on-lg" alt="Tablet"
+                                class="header__navbar-icon">
+                            <span>Tablet</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item">
+                            <img src="./common/imgs/icon-phu-kien-96x96-1.png" class="hide-on-lg" alt="Phụ kiện"
+                                class="header__navbar-icon">
+                            <span class="show-more-icon">Phụ kiện</span>
+
+                        </a>
+
+                        <a href="#" class="header__navbar-item">
+                            <img src="./common/imgs/icon-smartwatch-96x96-1.png" class="hide-on-lg" alt="Smartwatch"
+                                class="header__navbar-icon">
+                            <span>Smartwatch</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item">
+                            <img src="./common/imgs/watch-icon-96x96.png" class="hide-on-lg" alt="Đồng hồ"
+                                class="header__navbar-icon">
+                            <span>Đồng hồ</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item hide show-on-lg">
+                            <span>Máy tính bộ</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item hide show-on-lg">
+                            <span>Màn hình</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item hide show-on-lg">
+                            <span>Máy in</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item hide show-on-lg">
+                            <span>Mực in</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item hide show-on-lg">
+                            <span>Sạc dự phòng</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item hide show-on-lg">
+                            <span>Tai nghe</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item">
+                            <img src="./common/imgs/icon-header-may-cu-30x30.png" class="hide-on-lg" alt="Máy cũ giá rẻ"
+                                class="header__navbar-icon">
+                            <span>Máy cũ giá rẻ</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item hide-on-lg">
+                            <img src="./common/imgs/icon-pc-96x96.png" class="hide-on-lg" alt="PC, Máy in"
+                                class="header__navbar-icon">
+                            <span class="show-more-icon">PC, Máy in</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item">
+                            <span>Sim, Thẻ cào</span>
+                        </a>
+
+                        <a href="#" class="header__navbar-item">
+                            <span class="show-more-icon">Dịch vụ tiện ích</span>
+                        </a>
+                    </div>
+                    <div class="header__recommed hide show-on-lg">
+                        <div class="row gutter">
+                            <div class="col-6 col-md-6 col-sm-12">
+                                <div class="h3 header__recommed-title">Nhóm hàng mới</div>
+                                <a href="#" class="header__recommed-item">
+                                    Phụ kiện ô tô
+                                </a>
+                                <a href="#" class="header__recommed-item">
+                                    Thiết bị nhà thông minh
+                                </a>
+                                <a href="#" class="header__recommed-item">
+                                    Màn hình máy tính
+                                </a>
+                                <a href="#" class="header__recommed-item">
+                                    Thẻ cào giảm đến 3%
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-6 col-sm-12">
+                                <div class="h3 header__recommed-title">Thế giới công nghệ</div>
+                                <a href="#" class="header__recommed-item">
+                                    24h Công nghệ
+                                </a>
+                                <a href="#" class="header__recommed-item">
+                                    Hỏi đáp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ##### Begin Header ##### -->
+
+        <!-- ##### Start Content ##### -->
+        <div class="content">
+            <div class="bg-first"></div>
+
+            <!-- ##### Star slider first ##### -->
+            <div class="slider-first">
+                <div class="container">
+                    <div class="owl-carousel owl-theme slider-first-owl">
+                        <div class="item slider-first-owl-item">
+                            <a href="#">
+                                <img src="./common/imgs/slider-first-owl/720-220-720x220-105.png"
+                                    alt="The Gioi Di Dong">
+                            </a>
+                        </div>
+                        <div class="item slider-first-owl-item">
+                            <a href="#">
+                                <img src="./common/imgs/slider-first-owl/720-220-720x220-250.png"
+                                    alt="The Gioi Di Dong">
+                            </a>
+                        </div>
+                        <div class="item slider-first-owl-item">
+                            <a href="#">
+                                <img src="./common/imgs/slider-first-owl/720-220-720x220-251.png"
+                                    alt="The Gioi Di Dong">
+                            </a>
+                        </div>
+                        <div class="item slider-first-owl-item">
+                            <a href="#">
+                                <img src="./common/imgs/slider-first-owl/720-220-720x220-93.png" alt="The Gioi Di Dong">
+                            </a>
+                        </div>
+                        <div class="item slider-first-owl-item">
+                            <a href="#">
+                                <img src="./common/imgs/slider-first-owl/aseri-720-220-720x220-1.png"
+                                    alt="The Gioi Di Dong">
+                            </a>
+                        </div>
+                        <div class="item slider-first-owl-item">
+                            <a href="#">
+                                <img src="./common/imgs/slider-first-owl/vivo-720-220-720x220-3.png"
+                                    alt="The Gioi Di Dong">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ##### Begin slider first ##### -->
+
+            <!-- ##### Begin option promo ##### -->
+            <div class="option-promo container">
+                <div class="option-promo-flex row">
+                    <div class="col-3 col-md-12">
+                        <div class="option-promo-item">
+                            <a href="#">
+                                <img src="./common/imgs/option-promo/iv-100x100.png" alt="The Gioi Di Dong">
+                                <span>
+                                    Săn Sale Online
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-12">
+                        <div class="option-promo-item">
+                            <a href="#">
+                                <img src="./common/imgs/option-promo/Frame-4660790-120x120.png" alt="The Gioi Di Dong">
+                                <span>
+                                    Dự đoán tỉ số cùng vivo
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-12">
+                        <div class="option-promo-item">
+                            <a href="#">
+                                <img src="./common/imgs/option-promo/Frame-46604-120x120-1.png" alt="The Gioi Di Dong">
+                                <span>
+                                    Siêu Sale OPPO
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-12">
+                        <div class="option-promo-item">
+                            <a href="#">
+                                <img src="./common/imgs/option-promo/icon-TGDD-OF-100x100.gif" alt="The Gioi Di Dong">
+                                <span>
+                                    Máy cũ giảm đến 50%
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ##### Begin option promo ##### -->
+
+            <div class="home-banner container hide-on-md">
+                <img src="./common/imgs/home-banner=1.png" class="home-banner-img" alt="The Gioi Di Dong">
+            </div>
+
+            <div class="product-slider-one-slider">
+                <div class="container">
+                    <div class="product-slider-one-slider-wrap" style="background-color:#8CAF11">
+                        <img src="./common/imgs/deal-ngon-moi-ngay-1200x120.png" alt="The Gioi Di Dong">
+                        <div class="owl-carousel owl-theme product-slider-one-slider-owl">
+
+                            <!-- Start: items -->
+                            <div class="item product-slider-one-slider-item">
+                                <a href="#" class="product-box-wrap">
+                                    <div class="product-box">
+                                        <div class="product-box__tra-gop">
+                                            <span>Trả góp 0%</span>
+                                        </div>
+                                        <div class="product-box__img">
+                                            <img src="./upload/imgs/product/samsung/samsung-galaxy-a23-xanh-thumb-600x600.jpg"
+                                                alt="The Gioi Di Dong">
+                                        </div>
+                                        <div class="product-box__hightlight">
+                                            <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png" alt="">
+                                            <span>World Cup sale to</span>
+                                        </div>
+                                        <div class="product-box__name">
+                                            Samsung Galaxy A23 6GB
+                                        </div>
+                                        <div class="product-box__price">
+                                            <span class="new-price">
+                                                5.690.000₫
+                                            </span>
+                                            <span class="per-price">
+                                                -8%
+                                            </span>
+                                        </div>
+                                        <div class="product-box__rate">
+                                            <span class="rate-point">
+                                                5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="rate-qty">
+                                                (100)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Begin: items -->
+
+                            <!-- Start: items -->
+                            <div class="item product-slider-one-slider-item">
+                                <a href="#" class="product-box-wrap">
+                                    <div class="product-box">
+                                        <div class="product-box__tra-gop">
+                                            <span>Trả góp 0%</span>
+                                        </div>
+                                        <div class="product-box__img">
+                                            <img src="./upload/imgs/product/iphone/iphone-11-trang-600x600.jpg"
+                                                alt="The Gioi Di Dong">
+                                        </div>
+                                        <div class="product-box__hightlight">
+                                            <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png" alt="">
+                                            <span>World Cup sale to</span>
+                                        </div>
+                                        <div class="product-box__name">
+                                            iPhone 11
+                                        </div>
+                                        <div class="product-box__price">
+                                            <span class="new-price">
+                                                11.690.000₫
+                                            </span>
+                                            <span class="per-price">
+                                                -22%
+                                            </span>
+                                        </div>
+                                        <div class="product-box__gift">
+                                            <span>Quà 500.000₫</span>
+                                        </div>
+                                        <div class="product-box__rate">
+                                            <span class="rate-point">
+                                                4.1
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="rate-qty">
+                                                (655)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Begin: items -->
+
+                            <!-- Start: items -->
+                            <div class="item product-slider-one-slider-item">
+                                <a href="#" class="product-box-wrap">
+                                    <div class="product-box">
+                                        <div class="product-box__tra-gop">
+                                            <span>Trả góp 0%</span>
+                                        </div>
+                                        <div class="product-box__img">
+                                            <img src="./upload/imgs/product/iphone/iphone-13-starlight-1-600x600.jpg"
+                                                alt="The Gioi Di Dong">
+                                        </div>
+                                        <div class="product-box__hightlight">
+                                            <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png" alt="">
+                                            <span>World Cup sale to</span>
+                                        </div>
+                                        <div class="product-box__name">
+                                            iPhone 13 128GB
+                                        </div>
+                                        <div class="product-box__price">
+                                            <span class="new-price">
+                                                19.990.000₫
+                                            </span>
+                                            <span class="per-price">
+                                                -20%
+                                            </span>
+                                        </div>
+                                        <div class="product-box__gift">
+                                            <span>Quà 500.000₫</span>
+                                        </div>
+                                        <div class="product-box__rate">
+                                            <span class="rate-point">
+                                                4.4
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="rate-qty">
+                                                (220)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Begin: items -->
+
+                            <!-- Start: items -->
+                            <div class="item product-slider-one-slider-item">
+                                <a href="#" class="product-box-wrap">
+                                    <div class="product-box">
+                                        <div class="product-box__tra-gop">
+                                            <span>Trả góp 0%</span>
+                                        </div>
+                                        <div class="product-box__img">
+                                            <img src="./upload/imgs/product/samsung/samsung-galaxy-watch-4-40mm-1-2-600x600.jpg"
+                                                alt="The Gioi Di Dong">
+                                        </div>
+                                        <div class="product-box__hightlight">
+                                            <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png" alt="">
+                                            <span>Xả kho giảm hết</span>
+                                        </div>
+                                        <div class="product-box__name">
+                                            Samsung Galaxy Watch 4 40mm dây silicone
+                                        </div>
+                                        <div class="product-box__price">
+                                            <span class="new-price">
+                                                3.990.000₫
+                                            </span>
+                                            <span class="per-price">
+                                                -38%
+                                            </span>
+                                        </div>
+                                        <div class="product-box__gift">
+                                            <span>Quà 500.000₫</span>
+                                        </div>
+                                        <div class="product-box__rate">
+                                            <span class="rate-point">
+                                                4.1
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="rate-qty">
+                                                (35)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Begin: items -->
+
+                            <!-- Start: items -->
+                            <div class="item product-slider-one-slider-item">
+                                <a href="#" class="product-box-wrap">
+                                    <div class="product-box">
+                                        <div class="product-box__tra-gop">
+                                            <span>Trả góp 0%</span>
+                                        </div>
+                                        <div class="product-box__img">
+                                            <img src="./upload/imgs/product/iphone/apple-watch-se-44mm-vien-nhom-day-cao-su-xanh-den-thumb-1-600x600.jpg"
+                                                alt="The Gioi Di Dong">
+                                        </div>
+                                        <div class="product-box__hightlight">
+                                            <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png" alt="">
+                                            <span>Xả kho giảm hết</span>
+                                        </div>
+                                        <div class="product-box__name">
+                                            Apple Watch SE 44mm viền nhôm dây silicone
+                                        </div>
+                                        <div class="product-box__price">
+                                            <span class="new-price">
+                                                7.690.000₫
+                                            </span>
+                                            <span class="per-price">
+                                                -23%
+                                            </span>
+                                        </div>
+                                        <div class="product-box__gift">
+                                            <span>Quà 500.000₫</span>
+                                        </div>
+                                        <div class="product-box__rate">
+                                            <span class="rate-point">
+                                                4.6
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="rate-qty">
+                                                (41)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Begin: items -->
+
+                            <!-- Start: items -->
+                            <div class="item product-slider-one-slider-item">
+                                <a href="#" class="product-box-wrap">
+                                    <div class="product-box">
+                                        <div class="product-box__tra-gop">
+                                            <span>Trả góp 0%</span>
+                                        </div>
+                                        <div class="product-box__img">
+                                            <img src="./upload/imgs/product/oppo/oppo-a57-128gb-vang-600x600.jpg"
+                                                alt="The Gioi Di Dong">
+                                        </div>
+                                        <div class="product-box__hightlight">
+                                            <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png" alt="">
+                                            <span>Xả kho giảm hết</span>
+                                        </div>
+                                        <div class="product-box__name">
+                                            OPPO A57 128GB
+                                        </div>
+                                        <div class="product-box__price">
+                                            <span class="new-price">
+                                                4.690.000₫
+                                            </span>
+                                            <span class="per-price">
+                                                -6%
+                                            </span>
+                                        </div>
+                                        <div class="product-box__gift">
+                                            <span>Quà 500.000₫</span>
+                                        </div>
+                                        <div class="product-box__rate">
+                                            <span class="rate-point">
+                                                3.9
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="rate-qty">
+                                                (72)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Begin: items -->
+
+                        </div>
+                        <div class="product-slider-one-slider-view-more-btn">
+                            <a href="#">
+                                <span>Xem tất cả   <i class="fa-solid fa-forward"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="height: 1000px; background-color: var(--primary); margin-top: 20px;"></div>
+        </div>
+    </div>
+    <!-- ##### Begin Content ##### -->
+
+    <!-- ##### Start Footer ##### -->
+    <div class="footer">
+        <div class="footer__first">
+            <div class="container">
+                <div class="footer__first-row">
+                    <div class="col-first">
+                        <a href="#" class="footer__link">
+                            Tích điểm Quà tặng VIP
+                        </a>
+                        <a href="#" class="footer__link">
+                            Lịch sử mua hàng
+                        </a>
+                        <a href="#" class="footer__link">
+                            Tìm hiểu về mua trả góp
+                        </a>
+                        <a href="#" class="footer__link">
+                            Chính sách bảo hành
+                        </a>
+                        <a href="#" class="footer__link show-more-icon">
+                            Xem thêm
+                        </a>
+                    </div>
+                    <div class="col-second">
+                        <a href="#" class="footer__link">
+                            Giới thiệu công ty (MWG.vn)
+                        </a>
+                        <a href="#" class="footer__link">
+                            Tuyển dụng
+                        </a>
+                        <a href="#" class="footer__link">
+                            Gửi góp ý, khiếu nại
+                        </a>
+                        <a href="#" class="footer__link">
+                            Tìm siêu thị (3.370 shop)
+                        </a>
+                        <a href="#" class="footer__link">
+                            Xem bản mobile
+                        </a>
+                    </div>
+                    <div class="col-third">
+                        <div class="footer__text">
+                            <span class="footer__text--bloder">Tổng đài hỗ trợ </span> (Miễn phí gọi)
+                        </div>
+                        <div class="footer__text">
+                            Gọi mua: <span class="footer__text--bloder-primary">1800.1060</span> (7:30 - 22:00)
+                        </div>
+                        <div class="footer__text">
+                            Kỹ thuật: <span class="footer__text--bloder-primary">1800.1763</span> (7:30 - 22:00)
+                        </div>
+                        <div class="footer__text">
+                            Khiếu nại: <span class="footer__text--bloder-primary">1800.1062</span> (8:00 - 21:30)
+                        </div>
+                        <div class="footer__text">
+                            Bảo hành: <span class="footer__text--bloder-primary">1800.1064</span> (8:00 - 21:00)
+                        </div>
+                    </div>
+                    <div class="col-fourth">
+                        <div class="footer__social">
+                            <div class="footer__sosical-item">
+                                <i class="icon-facebook"></i>
+                                <a href="#">
+                                    3784.9k Fan
+                                </a>
+                            </div>
+                            <div class="footer__sosical-item">
+                                <i class="icon-youtube"></i>
+                                <a href="#">
+                                    855k Đăng ký
+                                </a>
+                            </div>
+                            <div class="footer__sosical-item">
+                                <i class="icon-zalo"></i>
+                                <a href="#">
+                                    Zalo TGDĐ
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__certify">
+                            <a href="#">
+                                <i class="icon-congthuong"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-khieunai"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-protected"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-handle-cert"></i>
+                            </a>
+                        </div>
+                        <div class="footer__linked">
+                            <a href="" class="footer__linked-item">
+                                <i class="iconlogo-topzone"></i>
+                            </a>
+                            <a href="" class="footer__linked-item">
+                                <i class="iconlogo-dienmayxanh"></i>
+                            </a>
+                            <a href="" class="footer__linked-item">
+                                <i class="iconlogo-bachhoaxanh"></i>
+                            </a>
+                            <a href="" class="footer__linked-item">
+                                <i class="iconlogo-ankhang"></i>
+                            </a>
+                            <a href="" class="footer__linked-item">
+                                <i class="iconlogo-kids"></i>
+                            </a>
+                            <a href="" class="footer__linked-item">
+                                <i class="iconlogo-sport"></i>
+                            </a>
+                            <a href="" class="footer__linked-item">
+                                <i class="iconlogo-tantam"></i>
+                            </a>
+                            <a href="" class="footer__linked-item">
+                                <i class="iconlogo-4kfarm"></i>
+                            </a>
+                            <a href="" class="footer__linked-item">
+                                <i class="iconlogo-vieclam"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__coppyright">
+            <div class="container">
+                <span class="footer__coppyright-content">
+                    © 2018. Công ty cổ phần Thế Giới Di Động. GPDKKD: 0303217354 do sở KH & ĐT TP.HCM cấp ngày
+                    02/01/2007. GPMXH: 238/GP-BTTTT do Bộ Thông Tin và Truyền Thông cấp ngày 04/06/2020.
+                    Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện thoại: 028 38125960. Email:
+                    cskh@thegioididong.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt. <a href="#">Xem chính sách sử
+                        dụng</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Begin Footer ##### -->
+
+    </div>
+
+    <div id="modal">
+        <div class="modal__overlay" id="modal__overlay">
+            <div class="modal__body" id="modal__body">
+                <div class="modal__header">
+                    <h3 class="modal__header-text">
+                        Địa chỉ đã chọn: Hồ Chí Minh
+                    </h3>
+                    <span class="modal__header-close-btn" id="modal__header-close-btn">
+                        <i class="close-symbol"></i>
+                        Đóng
+                    </span>
+                    <div class="modal__search">
+                        <i class="icon-search modal__search-icon"></i>
+                        <input type="text" class="modal__search-input" id="modal-filter-locaion">
+                    </div>
+                </div>
+                <div class="modal__session">
+                    <h4 class="modal__session-title">Chọn tỉnh hoặc thành phố</h4>
+                    <div class="modal__location-list">
+                        <div class="modal__location-item modal__location-item--active">Hồ Chí Minh</div>
+                        <div class="modal__location-item">Hà Nội</div>
+                        <div class="modal__location-item">Đà Nẵng</div>
+                        <div class="modal__location-item">An Giang</div>
+                        <div class="modal__location-item">Bà Rịa - Vũng Tàu</div>
+                        <div class="modal__location-item">Bắc Giang</div>
+                        <div class="modal__location-item">Bắc Kạn</div>
+                        <div class="modal__location-item">Bạc Liêu</div>
+                        <div class="modal__location-item">Bắc Ninh</div>
+                        <div class="modal__location-item">Bến Tre</div>
+                        <div class="modal__location-item">Bình Định</div>
+                        <div class="modal__location-item">Bình Dương</div>
+                        <div class="modal__location-item">Bình Phước</div>
+                        <div class="modal__location-item">Cần Thơ</div>
+                        <div class="modal__location-item">Cao Bằng</div>
+                        <div class="modal__location-item">Đắk Lắk</div>
+                        <div class="modal__location-item">Đắk Nông</div>
+                        <div class="modal__location-item">Điện Biên</div>
+                        <div class="modal__location-item">Đồng Nai</div>
+                        <div class="modal__location-item">Đồng Tháp</div>
+                        <div class="modal__location-item">Gia Lai</div>
+                        <div class="modal__location-item">Hà Giang</div>
+                        <div class="modal__location-item">Hà Nam</div>
+                        <div class="modal__location-item">Hà Tĩnh</div>
+                        <div class="modal__location-item">Hải Dương</div>
+                        <div class="modal__location-item">Hải Phòng</div>
+                        <div class="modal__location-item">Hậu Giang</div>
+                        <div class="modal__location-item">Hòa Bình</div>
+                        <div class="modal__location-item">Hưng Yên</div>
+                        <div class="modal__location-item">Khánh Hòa</div>
+                        <div class="modal__location-item">Kiên Giang</div>
+                        <div class="modal__location-item">Kon Tum</div>
+                        <div class="modal__location-item">Lai Châu</div>
+                        <div class="modal__location-item">Lâm Đồng</div>
+                        <div class="modal__location-item">Lạng Sơn</div>
+                        <div class="modal__location-item">Lào Cai</div>
+                        <div class="modal__location-item">Long An</div>
+                        <div class="modal__location-item">Nam Định</div>
+                        <div class="modal__location-item">Nghệ An</div>
+                        <div class="modal__location-item">Ninh Bình</div>
+                        <div class="modal__location-item">Ninh Thuận</div>
+                        <div class="modal__location-item">Phú Thọ</div>
+                        <div class="modal__location-item">Phú Yên</div>
+                        <div class="modal__location-item">Quảng Bình</div>
+                        <div class="modal__location-item">Quảng Nam</div>
+                        <div class="modal__location-item">Quảng Ngãi</div>
+                        <div class="modal__location-item">Quảng Ninh</div>
+                        <div class="modal__location-item">Quảng Trị</div>
+                        <div class="modal__location-item">Sóc Trăng</div>
+                        <div class="modal__location-item">Sơn La</div>
+                        <div class="modal__location-item">Tây Ninh</div>
+                        <div class="modal__location-item">Thái Bình</div>
+                        <div class="modal__location-item">Thái Nguyên</div>
+                        <div class="modal__location-item">Thanh Hóa</div>
+                        <div class="modal__location-item">Thừa Thiên Huế</div>
+                        <div class="modal__location-item">Tiền Giang</div>
+                        <div class="modal__location-item">Trà Vinh</div>
+                        <div class="modal__location-item">Tuyên Quang</div>
+                        <div class="modal__location-item">Vĩnh Long</div>
+                        <div class="modal__location-item">Vĩnh Phúc</div>
+                        <div class="modal__location-item">Yên Bái</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="common/js/jquery.min.js"></script>
+<script src="common/js/owl.carousel.js"></script>
+<script src="./common/js/main.js"></script>
+<script src="./common/js/home.js"></script>
+
+</html>

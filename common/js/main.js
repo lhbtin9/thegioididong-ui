@@ -6,9 +6,39 @@ $(document).ready(function () {
         nav: true,
         items: 1,
         dots: false,
+        lazyLoad: true,
         navText: [`<i class="fa-regular fa-chevron-left"></i>`, `<i class="fa-regular fa-chevron-right"></i>`]
     })
 });
+
+// ##### product-slider-one-slider-owl #####
+$(document).ready(function () {
+    $('.product-slider-one-slider-owl').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 5,
+        dots: false,
+        lazyLoad: true,
+        navText: [`<i class="fa-regular fa-chevron-left"></i>`, `<i class="fa-regular fa-chevron-right"></i>`]
+    })
+});
+
+// ##### Modal input filter items #####
+const modalLocationInput = document.getElementById('modal-filter-locaion');
+modalLocationInput.onkeyup = function () {
+    var modalFilter = modalLocationInput.value.toUpperCase();
+    var lis = document.getElementsByClassName("modal__location-item");
+    for (var i = 0; i < lis.length; i++) {
+        var name = lis[i].innerHTML;
+        
+        if (name.toUpperCase().indexOf(modalFilter) == 0)
+            lis[i].style.display = 'inline';
+        else
+            lis[i].style.display = 'none';
+    }
+}
+
 
 // #### Show/hide Modal #####
 $(document).ready(function () {
@@ -30,21 +60,6 @@ $(document).ready(function () {
         $('body').removeClass('no-scroll');
     });
 });
-
-// ##### Modal input filter items #####
-const modalLocationInput = document.getElementById('modal-filter-locaion');
-modalLocationInput.onkeyup = function () {
-    var modalFilter = modalLocationInput.value.toUpperCase();
-    var lis = document.getElementsByClassName("modal__location-item");
-    for (var i = 0; i < lis.length; i++) {
-        var name = lis[i].innerHTML;
-        
-        if (name.toUpperCase().indexOf(modalFilter) == 0)
-            lis[i].style.display = 'inline';
-        else
-            lis[i].style.display = 'none';
-    }
-}
 
 // ##### Show/hide navbar on Tablet & Mobile #####
 $(document).ready(function () {
@@ -80,3 +95,4 @@ $(document).ready(function () {
         $(searchElement).toggleClass('header__search--active');
     });
 });
+

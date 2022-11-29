@@ -1,0 +1,115 @@
+.bg-first {
+    position: relative;
+    background: url(../../common/imgs/home-session-first-bg.jpg) no-repeat;
+    width: 100%;
+    --session-first-height: 450px;
+    height: var(--session-first-height);
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-first {
+}
+
+.slider-first-owl {
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.slider-first-owl-item {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slider-first-owl .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    margin-top: 0;
+}
+
+.slider-first-owl .owl-prev,
+.slider-first-owl .owl-next {
+    position: absolute;
+    background-color: #fff !important;
+    color: var(--dark) !important;
+    border-radius: 50% !important;
+    --owl-nav-size: 40px;
+    width: var(--owl-nav-size);
+    height: var(--owl-nav-size);
+    margin: 0 !important;
+    font-size: 2rem !important;
+    opacity: .5;
+    transition: .3s;
+}
+
+.slider-first-owl .owl-prev:hover,
+.slider-first-owl .owl-next:hover {
+    opacity: 1;
+}
+
+.slider-first-owl .owl-prev {
+    left: 0;
+    transform: translate(-50%, -50%) !important;
+}
+
+.slider-first-owl .owl-next {
+    right: 0;
+    transform: translate(50%, -50%) !important;
+}
+
+.option-promo {
+    margin-top: -70px !important;
+}
+
+.option-promo-flex {
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.option-promo-item {
+    height: 100px;
+    background-color: var(--white);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.option-promo-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.option-promo-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.option-promo-item span {
+    margin-left: 10px;
+    font-size: 2.2rem;
+    color: var(--dark);
+    line-height: 2.5rem;
+}
+
+.home-banner {
+    width: 100% !important;
+    height: 100px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.home-banner-img {
+    width: 100%;
+    object-fit: contain;
+}
+
