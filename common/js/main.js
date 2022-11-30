@@ -11,19 +11,6 @@ $(document).ready(function () {
     })
 });
 
-// ##### product-slider-one-slider-owl #####
-$(document).ready(function () {
-    $('.product-slider-one-slider-owl').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        items: 5,
-        dots: false,
-        lazyLoad: true,
-        navText: [`<i class="fa-regular fa-chevron-left"></i>`, `<i class="fa-regular fa-chevron-right"></i>`]
-    })
-});
-
 // ##### Modal input filter items #####
 const modalLocationInput = document.getElementById('modal-filter-locaion');
 modalLocationInput.onkeyup = function () {
