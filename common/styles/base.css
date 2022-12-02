@@ -4,6 +4,8 @@
     margin: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+            touch-action: manipulation;
+
 }
 
 html {
@@ -173,7 +175,7 @@ button, input {
 
 /* ##### Grid Layout Class ##### */
 .container {
-    width: 100% !important;
+    width: 1200px !important;
     max-width: 1200px !important;
     margin: 0 auto !important;
     display: block !important;

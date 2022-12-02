@@ -532,7 +532,7 @@ body.no-scroll {
 }
 
 .footer {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .footer__first {
@@ -960,6 +960,7 @@ body.no-scroll {
         pointer-events: unset;
         -webkit-animation: inRightToLeft ease-in-out .5s;
         animation: inRightToLeft ease-in-out .5s;
+        z-index: 2;
     }
 
     .header__navbar .show-more-icon::after {
@@ -1347,7 +1348,6 @@ body.no-scroll {
 
     .product-box__img img {
         margin-top: 10px;
-        width: 100px;
         transition: .3s;
     }
 

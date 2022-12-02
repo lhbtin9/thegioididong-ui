@@ -12,10 +12,7 @@ $('.slider-first-owl').owlCarousel({
         0:{
             items:1
         },
-        600:{
-            items:2
-        },
-        1000:{
+        1024:{
             items:2
         }
     }
@@ -27,60 +24,62 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         nav: true,
-        items: 5,
         dots: false,
         lazyLoad: true,
-        navText: [`<i class="fa-regular fa-chevron-left"></i>`, `<i class="fa-regular fa-chevron-right"></i>`]
+        navText: [`<i class="fa-regular fa-chevron-left"></i>`, `<i class="fa-regular fa-chevron-right"></i>`],
+        responsive:{
+            0:{
+                items:2
+            },
+            578:{
+                items: 3
+            },
+            1024:{
+                items:4
+            },
+            1239:{
+                items:5
+            }
+        }
     })
 });
 
-// ##### product-slider-two-slider__first-owl #####
-$('.product-slider-two-slider__first-owl').owlCarousel({
+// ##### common slider #####
+$('.common__slider-owl').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
     dots: false,
+    autoplay: true,
     navText: [`<i class="fa-regular fa-chevron-left"></i>`, `<i class="fa-regular fa-chevron-right"></i>`],
     responsive:{
         0:{
-            items:1
+            items:2
         },
-        600:{
-            items:3
+        577:{
+            items:2
         },
-        1000:{
+        740:{
+            items:2
+        },
+        1024:{
             items:3
         }
     }
 })
+
 $(document).ready(function () {
-    $('.product-slider-two-slider-owl').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        items: 5,
-        dots: false,
-        lazyLoad: true,
-        navText: [`<i class="fa-regular fa-chevron-left"></i>`, `<i class="fa-regular fa-chevron-right"></i>`]
-    })
-});
+    $('.today-suggestions__tabs-item').click(function (e) { 
+        e.preventDefault();
+        const activeIndex = $(this).parent().index();
+        const oldActive = $('.today-suggestions__content--active');
 
-// ##### Discount payment slider #####
-$('.discount-payment__slider-owl').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    dots: false,
-    navText: [`<i class="fa-regular fa-chevron-left"></i>`, `<i class="fa-regular fa-chevron-right"></i>`],
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3
-        }
-    }
-})
+        $('.today-suggestions__tabs-item--active').removeClass('today-suggestions__tabs-item--active');
+        $(`.today-suggestions__tabs-index:nth-child(${activeIndex + 1}) .today-suggestions__tabs-item`).addClass('today-suggestions__tabs-item--active');
+
+        $('.today-suggestions__content--hide-effect').removeClass('today-suggestions__content--hide-effect');
+        $(oldActive).addClass('today-suggestions__content--hide-effect');
+        $(oldActive).removeClass('today-suggestions__content--active');
+        $(`.today-suggestions__content:nth-child(${activeIndex + 1})`).addClass('today-suggestions__content--active');
+    });
+});

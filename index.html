@@ -77,7 +77,7 @@
                         </div>
 
                         <div class="header__search hide-on-sm" id="header__search">
-                            <form action="#" method="post" class="header__search-form">
+                            <form action="#" method="GET" class="header__search-form">
                                 <input type="text" class="header__search-input" placeholder="Bạn cần tìm gì..."
                                     required>
                                 <div class="header__suggestions">
@@ -248,43 +248,37 @@
             <div class="bg-first"></div>
 
             <!-- ##### Star slider first ##### -->
-            <div class="slider-first">
+
+            <div class="common-wrap slider-first">
                 <div class="container">
-                    <div class="owl-carousel owl-theme slider-first-owl">
-                        <div class="item slider-first-owl-item">
-                            <a href="#">
-                                <img src="./common/imgs/slider-first-owl/720-220-720x220-105.png"
-                                    alt="The Gioi Di Dong">
-                            </a>
-                        </div>
-                        <div class="item slider-first-owl-item">
-                            <a href="#">
-                                <img src="./common/imgs/slider-first-owl/720-220-720x220-250.png"
-                                    alt="The Gioi Di Dong">
-                            </a>
-                        </div>
-                        <div class="item slider-first-owl-item">
-                            <a href="#">
-                                <img src="./common/imgs/slider-first-owl/720-220-720x220-251.png"
-                                    alt="The Gioi Di Dong">
-                            </a>
-                        </div>
-                        <div class="item slider-first-owl-item">
-                            <a href="#">
-                                <img src="./common/imgs/slider-first-owl/720-220-720x220-93.png" alt="The Gioi Di Dong">
-                            </a>
-                        </div>
-                        <div class="item slider-first-owl-item">
-                            <a href="#">
-                                <img src="./common/imgs/slider-first-owl/aseri-720-220-720x220-1.png"
-                                    alt="The Gioi Di Dong">
-                            </a>
-                        </div>
-                        <div class="item slider-first-owl-item">
-                            <a href="#">
-                                <img src="./common/imgs/slider-first-owl/vivo-720-220-720x220-3.png"
-                                    alt="The Gioi Di Dong">
-                            </a>
+                    <div class="common">
+                        <div class="common__slider product-silder-format">
+                            <div class="owl-carousel owl-theme common__slider-owl slider-first-owl">
+                                <div class="item common__slider-owl-item">
+                                    <img src="./common/imgs/slider-first-owl/720-220-720x220-105.png"
+                                        alt="The Gioi Di Dong">
+                                </div>
+                                <div class="item common__slider-owl-item">
+                                    <img src="./common/imgs/slider-first-owl/720-220-720x220-250.png"
+                                        alt="The Gioi Di Dong">
+                                </div>
+                                <div class="item common__slider-owl-item">
+                                    <img src="./common/imgs/slider-first-owl/720-220-720x220-251.png"
+                                        alt="The Gioi Di Dong">
+                                </div>
+                                <div class="item common__slider-owl-item">
+                                    <img src="./common/imgs/slider-first-owl/720-220-720x220-93.png"
+                                        alt="The Gioi Di Dong">
+                                </div>
+                                <div class="item common__slider-owl-item">
+                                    <img src="./common/imgs/slider-first-owl/aseri-720-220-720x220-1.png"
+                                        alt="The Gioi Di Dong">
+                                </div>
+                                <div class="item common__slider-owl-item">
+                                    <img src="./common/imgs/slider-first-owl/vivo-720-220-720x220-3.png"
+                                        alt="The Gioi Di Dong">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -294,7 +288,7 @@
             <!-- ##### Begin option promo ##### -->
             <div class="option-promo container">
                 <div class="option-promo-flex row">
-                    <div class="col-3 col-md-12">
+                    <div class="col-3">
                         <div class="option-promo-item">
                             <a href="#">
                                 <img src="./common/imgs/option-promo/iv-100x100.png" alt="The Gioi Di Dong">
@@ -304,7 +298,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-3 col-md-12">
+                    <div class="col-3">
                         <div class="option-promo-item">
                             <a href="#">
                                 <img src="./common/imgs/option-promo/Frame-4660790-120x120.png" alt="The Gioi Di Dong">
@@ -314,7 +308,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-3 col-md-12">
+                    <div class="col-3">
                         <div class="option-promo-item">
                             <a href="#">
                                 <img src="./common/imgs/option-promo/Frame-46604-120x120-1.png" alt="The Gioi Di Dong">
@@ -324,7 +318,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-3 col-md-12">
+                    <div class="col-3">
                         <div class="option-promo-item">
                             <a href="#">
                                 <img src="./common/imgs/option-promo/icon-TGDD-OF-100x100.gif" alt="The Gioi Di Dong">
@@ -338,14 +332,15 @@
             </div>
             <!-- ##### Begin option promo ##### -->
 
-            <div class="home-banner container hide-on-md">
+            <div class="home-banner container container hide-on-md">
                 <img src="./common/imgs/home-banner=1.png" class="home-banner-img" alt="The Gioi Di Dong">
             </div>
 
-            <div class="product-slider-one-slider product-silder-format">
+            <div class="product-slider-one-slider product-silder-format worldcup-slider">
                 <div class="container">
                     <div class="product-slider-one-slider-wrap" style="background-color:#8CAF11">
-                        <img src="./common/imgs/deal-ngon-moi-ngay-1200x120.png" alt="The Gioi Di Dong">
+                        <img class="hide-on-md" src="./common/imgs/deal-ngon-moi-ngay-1200x120.png" alt="The Gioi Di Dong">
+                        <img class="hide show-on-md" src="./common/imgs/Banner-Mobile-360x101-2x-720x202-1.png" alt="The Gioi Di Dong">
                         <div class="owl-carousel owl-theme product-slider-one-slider-owl">
 
                             <!-- Start: items -->
@@ -613,306 +608,305 @@
                 </div>
             </div>
 
-            <div class="product-slider-two-slider">
+            <div class="product-slider-one-slider product-silder-format oppo-slider">
                 <div class="container">
-                    <div class="product-slider-two-slider-wrap">
-                        <h2 class="product-slider-two-slider_title">Tuần lễ vàng Oppo</h2>
-                        <div class="product-slider-two-slider__first product-silder-format">
-                            <div class="owl-carousel owl-theme product-slider-two-slider__first-owl">
-                                <div class="item product-slider-two-slider__first-owl-item">
+                    <div class="product-slider-one-slider-wrap oppo-slider-wrap" style="background-color:#28B779">
+                        <h2 class="product-slider-one-slider__title">
+                            Tuần lễ vàng Oppo
+                        </h2>
+
+                        <div class="common__slider product-silder-format">
+                            <div class="owl-carousel owl-theme common__slider-owl">
+                                <div class="item common__slider-owl-item">
                                     <img src="./upload/imgs/for-two-slider/380x200-380x200-3.png"
                                         alt="The Gioi Di Dong">
                                 </div>
-                                <div class="item product-slider-two-slider__first-owl-item">
+                                <div class="item common__slider-owl-item">
                                     <img src="./upload/imgs/for-two-slider/380x200-tws-oppo-380x200.png"
                                         alt="The Gioi Di Dong">
                                 </div>
-                                <div class="item product-slider-two-slider__first-owl-item">
+                                <div class="item common__slider-owl-item">
                                     <img src="./upload/imgs/for-two-slider/A57-seriesDesk-380x200.png"
                                         alt="The Gioi Di Dong">
                                 </div>
-                                <div class="item product-slider-two-slider__first-owl-item">
-                                    <img src="./upload/imgs/for-two-slider/Desk-380x200-1.png" alt="The Gioi Di Dong">
+                                <div class="item common__slider-owl-item">
+                                    <img src="./upload/imgs/for-two-slider/Desk-380x200-1.png"
+                                        alt="The Gioi Di Dong">
                                 </div>
-                                <div class="item product-slider-two-slider__first-owl-item">
+                                <div class="item common__slider-owl-item">
                                     <img src="./upload/imgs/for-two-slider/Reno7-seriesDesk-380x200.png"
                                         alt="The Gioi Di Dong">
                                 </div>
-                                <div class="item product-slider-two-slider__first-owl-item">
+                                <div class="item common__slider-owl-item">
                                     <img src="./upload/imgs/for-two-slider/Reno8-seriesDesk-380x200-1.png"
                                         alt="The Gioi Di Dong">
                                 </div>
-                                <div class="item product-slider-two-slider__first-owl-item">
+                                <div class="item common__slider-owl-item">
                                     <img src="./upload/imgs/for-two-slider/Sieu-saleDesk-380x200.png"
                                         alt="The Gioi Di Dong">
                                 </div>
                             </div>
                         </div>
-                        <div class="product-slider-two-slider__second product-silder-format">
-                            <div class="owl-carousel owl-theme product-slider-two-slider-owl">
 
-                                <!-- Start: items -->
-                                <div class="item product-slider-two-slider-item">
-                                    <a href="#" class="product-box-wrap">
-                                        <div class="product-box">
-                                            <div class="product-box__tra-gop">
-                                                <span>Trả góp 0%</span>
-                                            </div>
-                                            <div class="product-box__img">
-                                                <img src="./upload/imgs/product/samsung/samsung-galaxy-a23-xanh-thumb-600x600.jpg"
-                                                    alt="The Gioi Di Dong">
-                                            </div>
-                                            <div class="product-box__hightlight">
-                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
-                                                    alt="">
-                                                <span>World Cup sale to</span>
-                                            </div>
-                                            <div class="product-box__name">
-                                                Samsung Galaxy A23 6GB
-                                            </div>
-                                            <div class="product-box__price">
-                                                <span class="new-price">
-                                                    5.690.000₫
-                                                </span>
-                                                <span class="per-price">
-                                                    -8%
-                                                </span>
-                                            </div>
-                                            <div class="product-box__rate">
-                                                <span class="rate-point">
-                                                    5.0
-                                                    <i class="fa-solid fa-star"></i>
-                                                </span>
-                                                <span class="rate-qty">
-                                                    (100)
-                                                </span>
-                                            </div>
+
+
+                        <div class="owl-carousel owl-theme product-slider-one-slider-owl">
+
+                            <!-- Start: items -->
+                            <div class="item product-slider-one-slider-item">
+                                <a href="#" class="product-box-wrap">
+                                    <div class="product-box">
+                                        <div class="product-box__tra-gop">
+                                            <span>Trả góp 0%</span>
                                         </div>
-                                    </a>
-                                </div>
-                                <!-- Begin: items -->
-
-                                <!-- Start: items -->
-                                <div class="item product-slider-two-slider-item">
-                                    <a href="#" class="product-box-wrap">
-                                        <div class="product-box">
-                                            <div class="product-box__tra-gop">
-                                                <span>Trả góp 0%</span>
-                                            </div>
-                                            <div class="product-box__img">
-                                                <img src="./upload/imgs/product/iphone/iphone-11-trang-600x600.jpg"
-                                                    alt="The Gioi Di Dong">
-                                            </div>
-                                            <div class="product-box__hightlight">
-                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
-                                                    alt="">
-                                                <span>World Cup sale to</span>
-                                            </div>
-                                            <div class="product-box__name">
-                                                iPhone 11
-                                            </div>
-                                            <div class="product-box__price">
-                                                <span class="new-price">
-                                                    11.690.000₫
-                                                </span>
-                                                <span class="per-price">
-                                                    -22%
-                                                </span>
-                                            </div>
-                                            <div class="product-box__gift">
-                                                <span>Quà 500.000₫</span>
-                                            </div>
-                                            <div class="product-box__rate">
-                                                <span class="rate-point">
-                                                    4.1
-                                                    <i class="fa-solid fa-star"></i>
-                                                </span>
-                                                <span class="rate-qty">
-                                                    (655)
-                                                </span>
-                                            </div>
+                                        <div class="product-box__img">
+                                            <img src="./upload/imgs/product/samsung/samsung-galaxy-a23-xanh-thumb-600x600.jpg"
+                                                alt="The Gioi Di Dong">
                                         </div>
-                                    </a>
-                                </div>
-                                <!-- Begin: items -->
-
-                                <!-- Start: items -->
-                                <div class="item product-slider-two-slider-item">
-                                    <a href="#" class="product-box-wrap">
-                                        <div class="product-box">
-                                            <div class="product-box__tra-gop">
-                                                <span>Trả góp 0%</span>
-                                            </div>
-                                            <div class="product-box__img">
-                                                <img src="./upload/imgs/product/iphone/iphone-13-starlight-1-600x600.jpg"
-                                                    alt="The Gioi Di Dong">
-                                            </div>
-                                            <div class="product-box__hightlight">
-                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
-                                                    alt="">
-                                                <span>World Cup sale to</span>
-                                            </div>
-                                            <div class="product-box__name">
-                                                iPhone 13 128GB
-                                            </div>
-                                            <div class="product-box__price">
-                                                <span class="new-price">
-                                                    19.990.000₫
-                                                </span>
-                                                <span class="per-price">
-                                                    -20%
-                                                </span>
-                                            </div>
-                                            <div class="product-box__gift">
-                                                <span>Quà 500.000₫</span>
-                                            </div>
-                                            <div class="product-box__rate">
-                                                <span class="rate-point">
-                                                    4.4
-                                                    <i class="fa-solid fa-star"></i>
-                                                </span>
-                                                <span class="rate-qty">
-                                                    (220)
-                                                </span>
-                                            </div>
+                                        <div class="product-box__hightlight">
+                                            <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png" alt="">
+                                            <span>World Cup sale to</span>
                                         </div>
-                                    </a>
-                                </div>
-                                <!-- Begin: items -->
-
-                                <!-- Start: items -->
-                                <div class="item product-slider-two-slider-item">
-                                    <a href="#" class="product-box-wrap">
-                                        <div class="product-box">
-                                            <div class="product-box__tra-gop">
-                                                <span>Trả góp 0%</span>
-                                            </div>
-                                            <div class="product-box__img">
-                                                <img src="./upload/imgs/product/samsung/samsung-galaxy-watch-4-40mm-1-2-600x600.jpg"
-                                                    alt="The Gioi Di Dong">
-                                            </div>
-                                            <div class="product-box__hightlight">
-                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
-                                                    alt="">
-                                                <span>Xả kho giảm hết</span>
-                                            </div>
-                                            <div class="product-box__name">
-                                                Samsung Galaxy Watch 4 40mm dây silicone
-                                            </div>
-                                            <div class="product-box__price">
-                                                <span class="new-price">
-                                                    3.990.000₫
-                                                </span>
-                                                <span class="per-price">
-                                                    -38%
-                                                </span>
-                                            </div>
-                                            <div class="product-box__gift">
-                                                <span>Quà 500.000₫</span>
-                                            </div>
-                                            <div class="product-box__rate">
-                                                <span class="rate-point">
-                                                    4.1
-                                                    <i class="fa-solid fa-star"></i>
-                                                </span>
-                                                <span class="rate-qty">
-                                                    (35)
-                                                </span>
-                                            </div>
+                                        <div class="product-box__name">
+                                            Samsung Galaxy A23 6GB
                                         </div>
-                                    </a>
-                                </div>
-                                <!-- Begin: items -->
-
-                                <!-- Start: items -->
-                                <div class="item product-slider-two-slider-item">
-                                    <a href="#" class="product-box-wrap">
-                                        <div class="product-box">
-                                            <div class="product-box__tra-gop">
-                                                <span>Trả góp 0%</span>
-                                            </div>
-                                            <div class="product-box__img">
-                                                <img src="./upload/imgs/product/iphone/apple-watch-se-44mm-vien-nhom-day-cao-su-xanh-den-thumb-1-600x600.jpg"
-                                                    alt="The Gioi Di Dong">
-                                            </div>
-                                            <div class="product-box__hightlight">
-                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
-                                                    alt="">
-                                                <span>Xả kho giảm hết</span>
-                                            </div>
-                                            <div class="product-box__name">
-                                                Apple Watch SE 44mm viền nhôm dây silicone
-                                            </div>
-                                            <div class="product-box__price">
-                                                <span class="new-price">
-                                                    7.690.000₫
-                                                </span>
-                                                <span class="per-price">
-                                                    -23%
-                                                </span>
-                                            </div>
-                                            <div class="product-box__gift">
-                                                <span>Quà 500.000₫</span>
-                                            </div>
-                                            <div class="product-box__rate">
-                                                <span class="rate-point">
-                                                    4.6
-                                                    <i class="fa-solid fa-star"></i>
-                                                </span>
-                                                <span class="rate-qty">
-                                                    (41)
-                                                </span>
-                                            </div>
+                                        <div class="product-box__price">
+                                            <span class="new-price">
+                                                5.690.000₫
+                                            </span>
+                                            <span class="per-price">
+                                                -8%
+                                            </span>
                                         </div>
-                                    </a>
-                                </div>
-                                <!-- Begin: items -->
-
-                                <!-- Start: items -->
-                                <div class="item product-slider-two-slider-item">
-                                    <a href="#" class="product-box-wrap">
-                                        <div class="product-box">
-                                            <div class="product-box__tra-gop">
-                                                <span>Trả góp 0%</span>
-                                            </div>
-                                            <div class="product-box__img">
-                                                <img src="./upload/imgs/product/oppo/oppo-a57-128gb-vang-600x600.jpg"
-                                                    alt="The Gioi Di Dong">
-                                            </div>
-                                            <div class="product-box__hightlight">
-                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
-                                                    alt="">
-                                                <span>Xả kho giảm hết</span>
-                                            </div>
-                                            <div class="product-box__name">
-                                                OPPO A57 128GB
-                                            </div>
-                                            <div class="product-box__price">
-                                                <span class="new-price">
-                                                    4.690.000₫
-                                                </span>
-                                                <span class="per-price">
-                                                    -6%
-                                                </span>
-                                            </div>
-                                            <div class="product-box__gift">
-                                                <span>Quà 500.000₫</span>
-                                            </div>
-                                            <div class="product-box__rate">
-                                                <span class="rate-point">
-                                                    3.9
-                                                    <i class="fa-solid fa-star"></i>
-                                                </span>
-                                                <span class="rate-qty">
-                                                    (72)
-                                                </span>
-                                            </div>
+                                        <div class="product-box__rate">
+                                            <span class="rate-point">
+                                                5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="rate-qty">
+                                                (100)
+                                            </span>
                                         </div>
-                                    </a>
-                                </div>
-                                <!-- Begin: items -->
-
+                                    </div>
+                                </a>
                             </div>
+                            <!-- Begin: items -->
+
+                            <!-- Start: items -->
+                            <div class="item product-slider-one-slider-item">
+                                <a href="#" class="product-box-wrap">
+                                    <div class="product-box">
+                                        <div class="product-box__tra-gop">
+                                            <span>Trả góp 0%</span>
+                                        </div>
+                                        <div class="product-box__img">
+                                            <img src="./upload/imgs/product/iphone/iphone-11-trang-600x600.jpg"
+                                                alt="The Gioi Di Dong">
+                                        </div>
+                                        <div class="product-box__hightlight">
+                                            <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png" alt="">
+                                            <span>World Cup sale to</span>
+                                        </div>
+                                        <div class="product-box__name">
+                                            iPhone 11
+                                        </div>
+                                        <div class="product-box__price">
+                                            <span class="new-price">
+                                                11.690.000₫
+                                            </span>
+                                            <span class="per-price">
+                                                -22%
+                                            </span>
+                                        </div>
+                                        <div class="product-box__gift">
+                                            <span>Quà 500.000₫</span>
+                                        </div>
+                                        <div class="product-box__rate">
+                                            <span class="rate-point">
+                                                4.1
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="rate-qty">
+                                                (655)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Begin: items -->
+
+                            <!-- Start: items -->
+                            <div class="item product-slider-one-slider-item">
+                                <a href="#" class="product-box-wrap">
+                                    <div class="product-box">
+                                        <div class="product-box__tra-gop">
+                                            <span>Trả góp 0%</span>
+                                        </div>
+                                        <div class="product-box__img">
+                                            <img src="./upload/imgs/product/iphone/iphone-13-starlight-1-600x600.jpg"
+                                                alt="The Gioi Di Dong">
+                                        </div>
+                                        <div class="product-box__hightlight">
+                                            <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png" alt="">
+                                            <span>World Cup sale to</span>
+                                        </div>
+                                        <div class="product-box__name">
+                                            iPhone 13 128GB
+                                        </div>
+                                        <div class="product-box__price">
+                                            <span class="new-price">
+                                                19.990.000₫
+                                            </span>
+                                            <span class="per-price">
+                                                -20%
+                                            </span>
+                                        </div>
+                                        <div class="product-box__gift">
+                                            <span>Quà 500.000₫</span>
+                                        </div>
+                                        <div class="product-box__rate">
+                                            <span class="rate-point">
+                                                4.4
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="rate-qty">
+                                                (220)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Begin: items -->
+
+                            <!-- Start: items -->
+                            <div class="item product-slider-one-slider-item">
+                                <a href="#" class="product-box-wrap">
+                                    <div class="product-box">
+                                        <div class="product-box__tra-gop">
+                                            <span>Trả góp 0%</span>
+                                        </div>
+                                        <div class="product-box__img">
+                                            <img src="./upload/imgs/product/samsung/samsung-galaxy-watch-4-40mm-1-2-600x600.jpg"
+                                                alt="The Gioi Di Dong">
+                                        </div>
+                                        <div class="product-box__hightlight">
+                                            <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png" alt="">
+                                            <span>Xả kho giảm hết</span>
+                                        </div>
+                                        <div class="product-box__name">
+                                            Samsung Galaxy Watch 4 40mm dây silicone
+                                        </div>
+                                        <div class="product-box__price">
+                                            <span class="new-price">
+                                                3.990.000₫
+                                            </span>
+                                            <span class="per-price">
+                                                -38%
+                                            </span>
+                                        </div>
+                                        <div class="product-box__gift">
+                                            <span>Quà 500.000₫</span>
+                                        </div>
+                                        <div class="product-box__rate">
+                                            <span class="rate-point">
+                                                4.1
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="rate-qty">
+                                                (35)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Begin: items -->
+
+                            <!-- Start: items -->
+                            <div class="item product-slider-one-slider-item">
+                                <a href="#" class="product-box-wrap">
+                                    <div class="product-box">
+                                        <div class="product-box__tra-gop">
+                                            <span>Trả góp 0%</span>
+                                        </div>
+                                        <div class="product-box__img">
+                                            <img src="./upload/imgs/product/iphone/apple-watch-se-44mm-vien-nhom-day-cao-su-xanh-den-thumb-1-600x600.jpg"
+                                                alt="The Gioi Di Dong">
+                                        </div>
+                                        <div class="product-box__hightlight">
+                                            <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png" alt="">
+                                            <span>Xả kho giảm hết</span>
+                                        </div>
+                                        <div class="product-box__name">
+                                            Apple Watch SE 44mm viền nhôm dây silicone
+                                        </div>
+                                        <div class="product-box__price">
+                                            <span class="new-price">
+                                                7.690.000₫
+                                            </span>
+                                            <span class="per-price">
+                                                -23%
+                                            </span>
+                                        </div>
+                                        <div class="product-box__gift">
+                                            <span>Quà 500.000₫</span>
+                                        </div>
+                                        <div class="product-box__rate">
+                                            <span class="rate-point">
+                                                4.6
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="rate-qty">
+                                                (41)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Begin: items -->
+
+                            <!-- Start: items -->
+                            <div class="item product-slider-one-slider-item">
+                                <a href="#" class="product-box-wrap">
+                                    <div class="product-box">
+                                        <div class="product-box__tra-gop">
+                                            <span>Trả góp 0%</span>
+                                        </div>
+                                        <div class="product-box__img">
+                                            <img src="./upload/imgs/product/oppo/oppo-a57-128gb-vang-600x600.jpg"
+                                                alt="The Gioi Di Dong">
+                                        </div>
+                                        <div class="product-box__hightlight">
+                                            <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png" alt="">
+                                            <span>Xả kho giảm hết</span>
+                                        </div>
+                                        <div class="product-box__name">
+                                            OPPO A57 128GB
+                                        </div>
+                                        <div class="product-box__price">
+                                            <span class="new-price">
+                                                4.690.000₫
+                                            </span>
+                                            <span class="per-price">
+                                                -6%
+                                            </span>
+                                        </div>
+                                        <div class="product-box__gift">
+                                            <span>Quà 500.000₫</span>
+                                        </div>
+                                        <div class="product-box__rate">
+                                            <span class="rate-point">
+                                                3.9
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="rate-qty">
+                                                (72)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Begin: items -->
+
                         </div>
                         <div class="product-slider-view-more-btn">
                             <a href="#">
@@ -923,41 +917,49 @@
                 </div>
             </div>
 
-            <div class="container">
-                <div class="shopping-trends">
-                    <h2 class="shopping-trends__title">Xu hướng mua sắm</h2>
-                    <div class="shopping-trends__flex">
-                        <div class="shopping-trends__item">
+            <div class="common-grid-wrap">
+                <div class="container">
+                    <div class="common-grid shopping-trends">
+                        <div class="common-grid__heading">
+                            <h2>Xu hướng mua sắm</h2>
                             <a href="#">
-                                <img src="./upload/imgs/shopping-trends/Frame-4919-280x235.png" alt="The Gioi Di Dong"
-                                    class="shopping-trends__img">
-                                <p>Điện thoại</p>
-                                <span>Galaxy Z Fold4 | Z Flip4</span>
+                                Xem tất cả
+                                <i class="fa-regular fa-chevron-right"></i>
                             </a>
                         </div>
-                        <div class="shopping-trends__item">
-                            <a href="#">
-                                <img src="./upload/imgs/shopping-trends/xu-huong-gaming-desk-280x235.png"
-                                    alt="The Gioi Di Dong" class="shopping-trends__img">
-                                <p>Laptop Gaming</p>
-                                <span>Đồng giá giảm 10%</span>
-                            </a>
-                        </div>
-                        <div class="shopping-trends__item">
-                            <a href="#">
-                                <img src="./upload/imgs/shopping-trends/Frame-47574--3--280x235.png"
-                                    alt="The Gioi Di Dong" class="shopping-trends__img">
-                                <p>Máy chiếu</p>
-                                <span>Worldcup giảm đến 10%</span>
-                            </a>
-                        </div>
-                        <div class="shopping-trends__item">
-                            <a href="#">
-                                <img src="./upload/imgs/shopping-trends/applechung-280x235-1.png" alt="The Gioi Di Dong"
-                                    class="shopping-trends__img">
-                                <p>Apple Watch</p>
-                                <span>Giảm sốc đến 40%</span>
-                            </a>
+                        <div class="common-grid__flex">
+                            <div class="shopping-trends__item">
+                                <a href="#">
+                                    <img src="./upload/imgs/shopping-trends/Frame-4919-280x235.png" alt="The Gioi Di Dong"
+                                        class="shopping-trends__img">
+                                    <p>Điện thoại</p>
+                                    <span>Galaxy Z Fold4 | Z Flip4</span>
+                                </a>
+                            </div>
+                            <div class="shopping-trends__item">
+                                <a href="#">
+                                    <img src="./upload/imgs/shopping-trends/xu-huong-gaming-desk-280x235.png"
+                                        alt="The Gioi Di Dong" class="shopping-trends__img">
+                                    <p>Laptop Gaming</p>
+                                    <span>Đồng giá giảm 10%</span>
+                                </a>
+                            </div>
+                            <div class="shopping-trends__item hide-on-lg">
+                                <a href="#">
+                                    <img src="./upload/imgs/shopping-trends/Frame-47574--3--280x235.png"
+                                        alt="The Gioi Di Dong" class="shopping-trends__img">
+                                    <p>Máy chiếu</p>
+                                    <span>Worldcup giảm đến 10%</span>
+                                </a>
+                            </div>
+                            <div class="shopping-trends__item hide-on-lg">
+                                <a href="#">
+                                    <img src="./upload/imgs/shopping-trends/applechung-280x235-1.png" alt="The Gioi Di Dong"
+                                        class="shopping-trends__img">
+                                    <p>Apple Watch</p>
+                                    <span>Giảm sốc đến 40%</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1114,39 +1116,39 @@
                 </div>
             </div>
 
-            <div class="discount-payment-wrap">
+            <div class="common-wrap">
                 <div class="container">
-                    <div class="discount-payment">
-                        <div class="discount-payment__title">
+                    <div class="common">
+                        <div class="common__title">
                             Giảm thêm khi thanh toán online
                         </div>
-                        <div class="discount-payment__slider product-silder-format">
-                            <div class="owl-carousel owl-theme discount-payment__slider-owl">
-                                <div class="item discount-payment__slider-owl-item">
+                        <div class="common__slider product-silder-format">
+                            <div class="owl-carousel owl-theme common__slider-owl">
+                                <div class="item common__slider-owl-item">
                                     <img src="./upload/imgs/discount-payment/EXB-500k-380x200.png"
                                         alt="The Gioi Di Dong">
                                 </div>
-                                <div class="item discount-payment__slider-owl-item">
+                                <div class="item common__slider-owl-item">
                                     <img src="./upload/imgs/discount-payment/TGDD-380x200-380x200.jpg"
                                         alt="The Gioi Di Dong">
                                 </div>
-                                <div class="item discount-payment__slider-owl-item">
+                                <div class="item common__slider-owl-item">
                                     <img src="./upload/imgs/discount-payment/VCBDesk--2--380x200.png"
                                         alt="The Gioi Di Dong">
                                 </div>
-                                <div class="item discount-payment__slider-owl-item">
+                                <div class="item common__slider-owl-item">
                                     <img src="./upload/imgs/discount-payment/VNPay-Apple-Watch-380x200-1.png"
                                         alt="The Gioi Di Dong">
                                 </div>
-                                <div class="item discount-payment__slider-owl-item">
+                                <div class="item common__slider-owl-item">
                                     <img src="./upload/imgs/discount-payment/VNPay-iPhone-iPad-380x200.png"
                                         alt="The Gioi Di Dong">
                                 </div>
-                                <div class="item discount-payment__slider-owl-item">
+                                <div class="item common__slider-owl-item">
                                     <img src="./upload/imgs/discount-payment/VNPay-Toan-bo-san-pham-380x200.png"
                                         alt="The Gioi Di Dong">
                                 </div>
-                                <div class="item discount-payment__slider-owl-item">
+                                <div class="item common__slider-owl-item">
                                     <img src="./upload/imgs/discount-payment/VnPaylaptop-380x200.png"
                                         alt="The Gioi Di Dong">
                                 </div>
@@ -1156,17 +1158,17 @@
                 </div>
             </div>
 
-            <div class="service-wrap">
+            <div class="common-grid-wrap">
                 <div class="container">
-                    <div class="service">
-                        <div class="service__heading">
+                    <div class="common-grid service">
+                        <div class="common-grid__heading">
                             <h2>Dịch vụ tiện ích</h2>
                             <a href="#">
                                 Xem thêm dịch vụ
                                 <i class="fa-regular fa-chevron-right"></i>
                             </a>
                         </div>
-                        <div class="service__flex">
+                        <div class="common-grid__flex">
                             <div class="service__item">
                                 <a href="#">
                                     <div class="service__first">
@@ -1175,7 +1177,7 @@
                                     </div>
                                     <div class="service__second">
                                         <span class="service__text--hightlight">Giảm 3%</span>
-                                         cho mệnh giá từ 100.000 trở lên
+                                        cho mệnh giá từ 100.000 trở lên
                                     </div>
                                 </a>
                             </div>
@@ -1190,7 +1192,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="service__item">
+                            <div class="service__item hide-on-lg">
                                 <a href="#">
                                     <div class="service__first">
                                         <i class="iconGlobal-game"></i>
@@ -1202,7 +1204,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="service__item">
+                            <div class="service__item hide-on-lg">
                                 <a href="#">
                                     <div class="service__first">
                                         <i class="iconGlobal-ticket"></i>
@@ -1218,8 +1220,1063 @@
                 </div>
             </div>
 
+            <div class="today-suggestions-wrap">
+                <div class="container">
+                    <div class="today-suggestions">
+                        <h2 class="today-suggestions__title">
+                            Gợi ý hôm nay
+                        </h2>
+                        <div class="row today-suggestions__tabs-controls">
+                            <div class="col-3 col-lg-6 col-md-6 today-suggestions__tabs-index">
+                                <div class="today-suggestions__tabs-item today-suggestions__tabs-item--active">
+                                    <img src="./common/imgs/today-suggestions/goiy-1.png" alt="Tabs-control">
+                                    <span>Cho bạn</span>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-6 col-md-6 today-suggestions__tabs-index">
+                                <div class="today-suggestions__tabs-item">
+                                    <img src="./common/imgs/today-suggestions/Desk11-50x50-1.png" alt="Tabs-control">
+                                    <span>Tablet giá rẻ</span>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-6 col-md-6 today-suggestions__tabs-index">
+                                <div class="today-suggestions__tabs-item">
+                                    <img src="./common/imgs/today-suggestions/50x50-chi-giam-online-48x52-2.png"
+                                        alt="Tabs-control">
+                                    <span>Săn sale online</span>
+                                </div>
+                            </div>
+                            <div class="col-3 col-lg-6 col-md-6 today-suggestions__tabs-index">
+                                <div class="today-suggestions__tabs-item">
+                                    <img src="./common/imgs/today-suggestions/icon-laptop-gaming-desk-50x50.png"
+                                        alt="Tabs-control">
+                                    <span>Laptop gaming</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="today-suggestions__contents">
+                            <div class="row today-suggestions__content today-suggestions__content--active">
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/oppo/oppo-a57-128gb-vang-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>Xả kho giảm hết</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                OPPO A57 128GB
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    4.690.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -6%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    3.9
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (72)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/oppo/oppo-a57-128gb-vang-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>Xả kho giảm hết</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                OPPO A57 128GB
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    4.690.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -6%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    3.9
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (72)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/oppo/oppo-a57-128gb-vang-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>Xả kho giảm hết</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                OPPO A57 128GB
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    4.690.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -6%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    3.9
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (72)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/oppo/oppo-a57-128gb-vang-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>Xả kho giảm hết</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                OPPO A57 128GB
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    4.690.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -6%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    3.9
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (72)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/oppo/oppo-a57-128gb-vang-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>Xả kho giảm hết</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                OPPO A57 128GB
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    4.690.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -6%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    3.9
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (72)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/oppo/oppo-a57-128gb-vang-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>Xả kho giảm hết</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                OPPO A57 128GB
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    4.690.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -6%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    3.9
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (72)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/oppo/oppo-a57-128gb-vang-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>Xả kho giảm hết</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                OPPO A57 128GB
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    4.690.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -6%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    3.9
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (72)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row today-suggestions__content">
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/samsung/samsung-galaxy-watch-4-40mm-1-2-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>Xả kho giảm hết</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                Samsung Galaxy Watch 4 40mm dây silicone
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    3.990.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -38%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.1
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (35)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/samsung/samsung-galaxy-watch-4-40mm-1-2-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>Xả kho giảm hết</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                Samsung Galaxy Watch 4 40mm dây silicone
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    3.990.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -38%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.1
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (35)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/samsung/samsung-galaxy-watch-4-40mm-1-2-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>Xả kho giảm hết</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                Samsung Galaxy Watch 4 40mm dây silicone
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    3.990.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -38%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.1
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (35)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/samsung/samsung-galaxy-watch-4-40mm-1-2-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>Xả kho giảm hết</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                Samsung Galaxy Watch 4 40mm dây silicone
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    3.990.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -38%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.1
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (35)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/samsung/samsung-galaxy-watch-4-40mm-1-2-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>Xả kho giảm hết</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                Samsung Galaxy Watch 4 40mm dây silicone
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    3.990.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -38%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.1
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (35)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row today-suggestions__content">
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/iphone/iphone-13-starlight-1-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>World Cup sale to</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                iPhone 13 128GB
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    19.990.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -20%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.4
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (220)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/iphone/iphone-13-starlight-1-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>World Cup sale to</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                iPhone 13 128GB
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    19.990.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -20%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.4
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (220)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/iphone/iphone-13-starlight-1-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>World Cup sale to</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                iPhone 13 128GB
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    19.990.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -20%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.4
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (220)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/iphone/iphone-13-starlight-1-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>World Cup sale to</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                iPhone 13 128GB
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    19.990.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -20%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.4
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (220)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/iphone/iphone-13-starlight-1-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>World Cup sale to</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                iPhone 13 128GB
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    19.990.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -20%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.4
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (220)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row today-suggestions__content">
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/iphone/iphone-11-trang-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>World Cup sale to</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                iPhone 11
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    11.690.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -22%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.1
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (655)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/iphone/iphone-11-trang-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>World Cup sale to</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                iPhone 11
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    11.690.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -22%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.1
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (655)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/iphone/iphone-11-trang-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>World Cup sale to</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                iPhone 11
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    11.690.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -22%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.1
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (655)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/iphone/iphone-11-trang-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>World Cup sale to</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                iPhone 11
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    11.690.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -22%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.1
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (655)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2-4 col-xl-3 col-lg-4 col-md-6 today-suggestions__content-item">
+                                    <a href="#" class="product-box-wrap">
+                                        <div class="product-box">
+                                            <div class="product-box__tra-gop">
+                                                <span>Trả góp 0%</span>
+                                            </div>
+                                            <div class="product-box__img">
+                                                <img src="./upload/imgs/product/iphone/iphone-11-trang-600x600.jpg"
+                                                    alt="The Gioi Di Dong">
+                                            </div>
+                                            <div class="product-box__hightlight">
+                                                <img src="common/imgs/hightlight-label/WORLD+CUP+SALE+TO-51x51.png"
+                                                    alt="">
+                                                <span>World Cup sale to</span>
+                                            </div>
+                                            <div class="product-box__name">
+                                                iPhone 11
+                                            </div>
+                                            <div class="product-box__price">
+                                                <span class="new-price">
+                                                    11.690.000₫
+                                                </span>
+                                                <span class="per-price">
+                                                    -22%
+                                                </span>
+                                            </div>
+                                            <div class="product-box__gift">
+                                                <span>Quà 500.000₫</span>
+                                            </div>
+                                            <div class="product-box__rate">
+                                                <span class="rate-point">
+                                                    4.1
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="rate-qty">
+                                                    (655)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="today-suggestions-view-more-btn">
+                            <a href="#">
+                                <span>Xem tất cả</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div style="height: 100px; background-color: var(--primary); margin-top: 20px;"></div>
+            <div class="common-grid-wrap">
+                <div class="container">
+                    <div class="common-grid news-technology">
+                        <div class="common-grid__heading">
+                            <h2>24h Công nghệ</h2>
+                            <a href="#">
+                                Xem tất cả
+                                <i class="fa-regular fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="common-grid__flex">
+                            <div class="news-technology__item">
+                                <a href="#">
+                                    <img src="./upload/imgs/news-technology/may-in-hp-gia-re-2_1280x720-200x200.jpg" alt="The Gioi Di Dong">
+                                    <span>
+                                        Máy in HP giảm tới 1 triệu, dân văn phòng sẽ thích các tính năng và thiết kế này đấy
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="news-technology__item">
+                                <a href="#">
+                                    <img src="./upload/imgs/news-technology/iphone-14-tgdd-123-1_1280x720-200x200.jpg" alt="The Gioi Di Dong">
+                                    <span>
+                                        iOS 16.1.2 đã có mặt với tính năng phát hiện tai nạn, khả năng bảo mật được cải tiến
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="news-technology__item hide-on-lg">
+                                <a href="#">
+                                    <img src="./upload/imgs/news-technology/10_800x450-200x200.jpg" alt="The Gioi Di Dong">
+                                    <span>Nghe Đồn Là: Tecno Phantom X2 dùng chip Dimensity 9000, ra mắt vào đầu tháng 12 (liên tục cập nhật)</span>
+                                </a>
+                            </div>
+                            <div class="news-technology__item hide-on-lg">
+                                <a href="#">
+                                    <img src="./upload/imgs/news-technology/iphone-14-tgdd-123-1_1280x720-200x200.jpg" alt="The Gioi Di Dong">
+                                    <span>
+                                        iOS 16.1.2 đã có mặt với tính năng phát hiện tai nạn, khả năng bảo mật được cải tiến
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="common-wrap">
+                <div class="container">
+                    <div class="common">
+                        <div class="common__title">
+                            CHUYÊN TRANG THƯƠNG HIỆU
+                        </div>
+                        <div class="common__slider product-silder-format">
+                            <div class="owl-carousel owl-theme common__slider-owl">
+                                <div class="item common__slider-owl-item">
+                                    <img src="./upload/imgs/slider-img/appleDT-390x210-1.png"
+                                        alt="The Gioi Di Dong">
+                                </div>
+                                <div class="item common__slider-owl-item">
+                                    <img src="./upload/imgs/slider-img/MAC-390x210.png"
+                                        alt="The Gioi Di Dong">
+                                </div>
+                                <div class="item common__slider-owl-item">
+                                    <img src="./upload/imgs/slider-img/samsung-390-210--1--390x210.png"
+                                        alt="The Gioi Di Dong">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="common-wrap">
+                <div class="container">
+                    <div class="common">
+                        <div class="common__title">
+                            CHUỖI MỚI DEAL KHỦNG
+                        </div>
+                        <div class="common__slider product-silder-format">
+                            <div class="owl-carousel owl-theme common__slider-owl">
+                                <div class="item common__slider-owl-item">
+                                    <img src="./upload/imgs/slider-img/khaitruong-new-760-400-760x400-4.png"
+                                        alt="The Gioi Di Dong">
+                                </div>
+                                <div class="item common__slider-owl-item">
+                                    <img src="./upload/imgs/slider-img/760-400-760x400.png"
+                                        alt="The Gioi Di Dong">
+                                </div>
+                                <div class="item common__slider-owl-item">
+                                    <img src="./upload/imgs/slider-img/760x400-760x400-17.png"
+                                        alt="The Gioi Di Dong">
+                                </div>
+                                <div class="item common__slider-owl-item">
+                                    <img src="./upload/imgs/slider-img/ok1-760x400-1.png"
+                                        alt="The Gioi Di Dong">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- ##### Begin Content ##### -->
