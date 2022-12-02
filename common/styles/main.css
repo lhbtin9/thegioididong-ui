@@ -731,14 +731,14 @@ body.no-scroll {
     border-radius: 5px;
     overflow: hidden;
     opacity: 0;
-    -webkit-animation: outFadeInHeart ease-in-out 1s;
-    animation: outFadeInHeart ease-in-out 1s;
+    -webkit-animation: outFadeInHeart ease-in-out .7s;
+    animation: outFadeInHeart ease-in-out .7s;
 }
 
 #modal.modal--active .modal__body {
     opacity: 1;
-    -webkit-animation: inFadeInHeart ease-in-out 1s;
-    animation: inFadeInHeart ease-in-out 1s;
+    -webkit-animation: inFadeInHeart ease-in-out .7s;
+    animation: inFadeInHeart ease-in-out .7s;
 }
 
 .modal__header {
@@ -921,7 +921,7 @@ body.no-scroll {
     }
 
     .header__search-input {
-        min-width: 259px;
+        min-width: 258px;
     }
 
     .header__bars-btn {

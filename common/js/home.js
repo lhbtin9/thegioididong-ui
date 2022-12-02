@@ -31,10 +31,10 @@ $(document).ready(function () {
             0:{
                 items:2
             },
-            578:{
+            741:{
                 items: 3
             },
-            1024:{
+            1025:{
                 items:4
             },
             1239:{

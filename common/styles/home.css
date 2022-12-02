@@ -549,12 +549,16 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .common-grid {
+        padding: 20px 10px;
+    }
+
     .slider-first {
         margin-top: 23px;
     }
 
     .option-promo {
-        margin-top: -100px !important;
+        margin-top: -50px !important;
         background-color: var(--white);
         border-radius: 10px;
     }
@@ -586,10 +590,35 @@
         font-size: 1.3rem;
         margin-left: 0;
     }
+ 
+    .common-grid__flex {
+        margin-top: 20px;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    .common-grid__flex::-webkit-scrollbar {
+        display: none;
+    }
 
     .shopping-trends__item {
         position: relative;
-        width: 47%;
+        min-width: 202px;
+        margin-right: 10px;
+    }
+
+    .shopping-trends__item:last-child {
+        margin-right: unset;
+    }
+
+    .shopping-trends__item p {
+        top: 106px;;
+        left: 10px;
+    }
+    .shopping-trends__item span {
+        top: 129px;
+        left: 10px;
+        max-width: 180px;
     }
 
     .hightlight-category__grid {
@@ -598,7 +627,12 @@
     }
 
     .service__item {
-        width: 48.5%;
+        min-width: 275px;
+        margin-right: 10px;    
+    }
+
+    .service__item:last-child {
+        margin-right: unset;
     }
 
     .today-suggestions__tabs-item {
@@ -610,7 +644,16 @@
     }
 
     .news-technology__item {
-        width: 48.5%;
+        min-width: 307px;
+        margin-right: 10px;
+    }
+
+    .oppo-slider-wrap .owl-carousel .owl-nav .owl-prev {
+        left: -11px !important;
+    }
+
+    .oppo-slider-wrap .owl-carousel .owl-nav .owl-next {
+        right: -11px !important;
     }
 }
 
@@ -628,17 +671,6 @@
         margin-top: 2.5%;
         margin-left: -3px;
     }
-    .common__slider {
-        width: 96%;
-        margin: 0 auto;
-    }
-
-    .option-promo {
-        margin-top: -66px !important;
-        width: 96% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
 
     .worldcup-slider {
         margin-top: 33px;
@@ -648,12 +680,17 @@
         height: 450px;
     }
 
+    .shopping-trends__item {
+        min-width: 253px;
+    }
+
     .shopping-trends__item p {
-        top: 144px;
+        top: 155px;
     }
 
     .shopping-trends__item span {
-        top: 172px;
+        top: 183px;
+        max-width: unset;
     }
 
     .oppo-slider-wrap .common__slider {
@@ -676,6 +713,19 @@
         right: -7px !important;
     }
 
+    .today-suggestions__title {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .common-grid-wrap {
+        margin-top: 20px !important;
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen and (max-width: 577px) {
     .today-suggestions-wrap .container {
         width: calc(100% - 10px) !important;
     margin-left: auto !important;
@@ -687,13 +737,27 @@
     margin-right: -5px;
     }
 
-    .today-suggestions__title {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .common-grid-wrap {
-        margin-top: 20px;
-        width: calc(100% - 20px);
+    .common__slider {
+        width: 96%;
         margin: 0 auto;
+    }
+
+    .option-promo {
+        margin-top: -66px !important;
+        width: 96% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .service__item {
+        min-width: 241px;
+    }
+
+    .news-technology__item {
+        min-width: 241px;
+    }
+
+    .common__title {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
