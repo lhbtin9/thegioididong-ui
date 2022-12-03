@@ -9,15 +9,17 @@
     z-index: -1 !important;
 }
 
-.slider-first {}
+.slider-first {
+    margin-top: -92px !important;
+}
 
 .slider-first-owl {
     position: relative;
-    transform: translateY(-62%);
+    /* transform: translateY(-62%); */
 }
 
 .option-promo {
-    margin-top: -90px !important;
+    /* margin-top: 20px !important; */
 }
 
 .option-promo-flex {
@@ -520,15 +522,11 @@
 
 @media only screen and (max-width: 1239px) {
     .bg-first {
-        --session-first-height: 404px;
+        --session-first-height: 242px;
     }
 
     .slider-first {
         margin-top: 12px;
-    }
-
-    .option-promo {
-        margin-top: -70px !important;
     }
 
     .shopping-trends__item p {
@@ -553,12 +551,7 @@
         padding: 20px 10px;
     }
 
-    .slider-first {
-        margin-top: 23px;
-    }
-
     .option-promo {
-        margin-top: -50px !important;
         background-color: var(--white);
         border-radius: 10px;
     }
@@ -668,7 +661,6 @@
     }
 
     .slider-first {
-        margin-top: 2.5%;
         margin-left: -3px;
     }
 
@@ -706,11 +698,11 @@
     }
 
     .oppo-slider-wrap .owl-carousel .owl-nav .owl-prev {
-        left: -7px !important;
+        left: -10px !important;
     }
     
     .oppo-slider-wrap .owl-carousel .owl-nav .owl-next {
-        right: -7px !important;
+        right: -10px !important;
     }
 
     .today-suggestions__title {
@@ -737,17 +729,17 @@
     margin-right: -5px;
     }
 
+    .product-slider-one-slider {
+        width: calc(100% - 20px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .common__slider {
         width: 96%;
         margin: 0 auto;
     }
 
-    .option-promo {
-        margin-top: -66px !important;
-        width: 96% !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
     .service__item {
         min-width: 241px;
     }
@@ -759,5 +751,32 @@
     .common__title {
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .worldcup-slider,
+    .oppo-slider,
+    .option-promo,
+    .common-grid-wrap,
+    .hightlight-category-wrap,
+    .common-wrap {
+        margin-top: 10px !important;
+    }
+
+    .worldcup-slider,
+    .oppo-slider-wrap .common__slider,
+    .option-promo,
+    .hightlight-category {
+        width: calc(100% - 20px) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .oppo-slider-wrap .product-slider-one-slider__title {
+        line-height: 1;
+        font-size: 3.5rem;
+        padding: 20px 0;
+    }
+
+    .slider-first {
+        margin-top: -205px !important;
     }
 }

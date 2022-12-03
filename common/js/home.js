@@ -1,7 +1,6 @@
 $('.slider-first-owl').owlCarousel({
     loop:true,
     margin:10,
-    nav:true,
     dots: false,
     autoplay: true,
     autoplayHoverPause: true,
@@ -10,10 +9,16 @@ $('.slider-first-owl').owlCarousel({
     navText: [`<i class="fa-regular fa-chevron-left"></i>`, `<i class="fa-regular fa-chevron-right"></i>`],
     responsive:{
         0:{
-            items:1
+            nav: false,
+            items: 1
+        },
+        741: {
+            nav: true,
+            items: 2
         },
         1024:{
-            items:2
+            nav: true,
+            items: 2
         }
     }
 })
@@ -48,21 +53,24 @@ $(document).ready(function () {
 $('.common__slider-owl').owlCarousel({
     loop:true,
     margin:10,
-    nav:true,
     dots: false,
     autoplay: true,
     navText: [`<i class="fa-regular fa-chevron-left"></i>`, `<i class="fa-regular fa-chevron-right"></i>`],
     responsive:{
-        0:{
+        0:{    
+            nav: false,
             items:2
         },
         577:{
+            nav: false,
             items:2
         },
-        740:{
+        741:{  
+            nav: true,
             items:2
         },
         1024:{
+            nav: true,
             items:3
         }
     }

@@ -92,7 +92,7 @@ function hideShowNavbarWhenScroll () {
     let currentScroll = window.pageYOffset;
     if (currentScroll - lastScroll < 0) addClass = true;
     if(currentScroll < 100) {
-        addClass = false;
+        if (currentScroll - lastScroll > 0) addClass = false;
         header.classList.remove("header__second--scroll-default");
         } else if (currentScroll < 300) {
             if (currentScroll - lastScroll < 0) {

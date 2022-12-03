@@ -19,6 +19,23 @@ body.no-scroll {
     scrollbar-width: none;
 }
 
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(51, 51, 51, 0.3);
+	background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: var(--main-orange-color);
+}
+
 .show-more-icon::after {
     content: '';
     position: absolute;
@@ -296,6 +313,29 @@ body.no-scroll {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.header__second--scroll-up {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    animation: navbarScrollUp ease-in-out .5s;
+}
+
+.header__second--scroll-down,
+.header__second--scroll-default {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    animation: navbarScrollDown ease-in-out .5s;
 }
 
 .header__logo {}
