@@ -83,3 +83,36 @@ $(document).ready(function () {
     });
 });
 
+// ##### Show/hide navbar when scroll #####
+function hideShowNavbarWhenScroll () {
+    const header = document.querySelector(".header__second");
+    let lastScroll = 0;
+    let addClass = false;
+    window.addEventListener("scroll", () => {
+    let currentScroll = window.pageYOffset;
+    if (currentScroll - lastScroll < 0) addClass = true;
+    if(currentScroll < 100) {
+        addClass = false;
+        header.classList.remove("header__second--scroll-default");
+        } else if (currentScroll < 300) {
+            if (currentScroll - lastScroll < 0) {
+                header.classList.add("header__second--scroll-default");
+                header.classList.remove("header__second--scroll-up");
+            }
+        } else if(currentScroll > 500) {
+            if(addClass) {
+                if (currentScroll - lastScroll > 0) {
+                    header.classList.add("header__second--scroll-down");
+                    header.classList.remove("header__second--scroll-up");
+                } else {
+                    header.classList.add("header__second--scroll-up");
+                    header.classList.remove("header__second--scroll-down");
+                }
+            }
+        }
+    
+    lastScroll = currentScroll;
+    })
+}
+
+hideShowNavbarWhenScroll();
