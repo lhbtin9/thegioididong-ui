@@ -59,7 +59,7 @@ $('.common__slider-owl').owlCarousel({
     responsive:{
         0:{    
             nav: false,
-            items:2
+            items:1
         },
         577:{
             nav: false,

@@ -630,6 +630,7 @@
 
     .today-suggestions__tabs-item {
         margin-top: 20px;
+        /* flex-direction: column; */
     }
 
     .today-suggestions__tabs-controls {
@@ -778,5 +779,19 @@
 
     .slider-first {
         margin-top: -205px !important;
+    }
+    .today-suggestions__tabs-controls {
+        padding: 0 4px;
+    }
+
+    .today-suggestions__tabs-item {
+        margin: 5px;
+    }
+    .today-suggestions__content {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .today-suggestions__content-item {
+        padding: 5px;
     }
 }
